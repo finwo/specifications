@@ -62,23 +62,23 @@ SPEC 0000               Specification Format                August 2018
 
 Table of contents
 
-   1. Character encoding ............................................ 3
-   2. Line definition ............................................... 3
-      2.1 Line numbering ............................................ 3
-   3. Pages ......................................................... 3
-      3.1 Page header ............................................... 3
-      3.2 Page footer ............................................... 3
-   4. Paragraphs .................................................... 3
-   5. Document header ............................................... 4
-      5.1. Descriptive header ....................................... 4
-      5.2. Short author identification .............................. 4
-      5.3. Publish date ............................................. 4
-   6. Document footer ............................................... 4
-   7. Section titles ................................................ 5
-   8. Document title ................................................ 5
-
-
-
+    1. Conventions .................................................. 3
+    2. Character encoding ........................................... 3
+    3. Line definition .............................................. 3
+       3.1 Line numbering ........................................... 3
+    4. Pages ........................................................ 3
+       4.1 Page header .............................................. 3
+       4.2 Page footer .............................................. 3
+    5. Paragraphs ................................................... 4
+    6. Document header .............................................. 4
+       6.1. Descriptive header ...................................... 4
+       6.2. Short author identification ............................. 4
+       6.3. Publish date ............................................ 4
+    7. Document footer .............................................. 5
+    8. Section titles ............................................... 5
+    9. Document title ............................................... 5
+   10. Informative resources ........................................ 6
+   11. Author information ........................................... 7
 
 
 
@@ -120,13 +120,21 @@ Table of contents
 Bron                                                           [Page 2]
 SPEC 0000               Specification Format                August 2018
 
-1. Character Encoding
+1. Conventions
 
-   Plain-text files for specifications must use the IBM Code page 437
-   with the exclusion of character code 0x0A which represents a
-   line feed as specified in IETF-RFC20.
+   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+   "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and
+   "OPTIONAL" in this document are to be interpreted as described in
+   RFC2119 when, and only when, they appear in all capitals, as shown
+   here.
 
-2. Line definition
+2. Character Encoding
+
+   Plain-text files for specifications must use the CP437 standard with
+   the exclusion of character code 0x0A which represents a line feed as
+   specified in RFC20.
+
+3. Line definition
 
    A line of text is a sequence of 0 or more characters followed by a
    line feed character. For the sake of and clarity, the ending line
@@ -136,7 +144,7 @@ SPEC 0000               Specification Format                August 2018
    ending line feed character. A line is called a blank line if it
    consists of only a line feed charachter.
 
-2.1. Line numbering
+3.1. Line numbering
 
    To ensure the following page dimension section is clear, we need to
    define how lines are numbered.
@@ -146,32 +154,24 @@ SPEC 0000               Specification Format                August 2018
    line 0. Numbering lines from 0 instead of 1 gives us an advantage of
    clarity in the next section.
 
-3. Pages
+4. Pages
 
    A page is a sequence of 60 lines. That means for every line number
    n, the line is the start of a new page when n mod 60 = 0.
 
-3.1 Page header
+4.1 Page header
 
    The first line of a page must consist of a left-aligned spec number
    indicator, a centered (short) document title and a right-aligned
-   publishing date (see 5.3). The second line of a page must always be
+   publishing date (see 6.3). The second line of a page must always be
    blank.
 
-3.2 Page footer
+4.2 Page footer
 
    The last line of a page must consist of a left-align last name of
    the author and a right-aligned page number between square brackets.
    The second-to-last line of a page must be blank, just like the
    second line of a page.
-
-4. Paragraphs
-
-   A paragraph is a sequence of consecutive lines containing characters
-   other than only a line feed. Paragraphs are separated by either a
-   blank line or a page break. Paragraphs are not allowed to span
-   multiple pages, limiting their size to 56 lines.
-
 
 
 
@@ -180,20 +180,27 @@ SPEC 0000               Specification Format                August 2018
 Bron                                                           [Page 3]
 SPEC 0000               Specification Format                August 2018
 
-5. Document header
+5. Paragraphs
+
+   A paragraph is a sequence of consecutive lines containing characters
+   other than only a line feed. Paragraphs are separated by either a
+   blank line or a page break. Paragraphs are not allowed to span
+   multiple pages, limiting their size to 56 lines.
+
+6. Document header
 
    The first lines of the first page of a specification document shall
-   always contain left-aligned description headers (see 5.1) and
+   always contain left-aligned description headers (see 6.1) and
    right-aligned author identification and a right-aligned publishing
    date.
 
-   Ensuring 2 blank lines between the initial lines (see 5.1 to 5.3)
-   and other text on the page, the document title (see 8) should be
+   Ensuring 2 blank lines between the initial lines (see 6.1 to 6.3)
+   and other text on the page, the document title (see 9) should be
    noted in the top-middle of the first page of the document. Further
    information on the first page should give a quick description of the
    contents of the document.
 
-5.1. Descriptive header
+6.1. Descriptive header
 
    Each descriptive header is made up of a key and a value. Whitespace
    is not allowed in both the key and the value. Whitespace can only be
@@ -209,7 +216,7 @@ SPEC 0000               Specification Format                August 2018
    character is not a quote, the value ends at the next whitespace
    character.
 
-5.2. Short author identification
+6.2. Short author identification
 
    In order to allow authors to take some credit and to track who has
    written what, the author's name must be added right-aligned on the
@@ -220,27 +227,31 @@ SPEC 0000               Specification Format                August 2018
    group of with a name, the short author identification string should
    state the group's name.
 
-5.3. Publish date
+6.3. Publish date
 
    Because a document is unlikely to have been written within a day, a
    publish date is simply the month's name starting with a capital
    followed by the year, both following the Gregorian calendar.
 
-6. Document footer
 
-   The document should close, starting on a new page, with all
-   informative references which were used to write the document, noting
-   their keyword, document title it's author and if possible a URL to
-   the resource.
 
-   After the informative references, the document should end with one
-   or several pages dedicated to the information of the author(s) and
-   if possible their contact information.
+
 
 Bron                                                           [Page 4]
 SPEC 0000               Specification Format                August 2018
 
-7. Section titles
+7. Document footer
+
+   The document should close, starting on a new page, with all
+   informative resources which were used to write the document, noting
+   their keyword, document title it's author and if possible a URL to
+   the resource.
+
+   After the informative resources, the document should end with one
+   or several pages dedicated to the information of the author(s) and
+   if possible their contact information.
+
+8. Section titles
 
    Section titles should be a short text about the subject the section
    describes. Whether it is simply the keyword of what it explains, a
@@ -251,7 +262,7 @@ SPEC 0000               Specification Format                August 2018
    any other capital letters, excluding where they are required in
    names or abbreviations.
 
-8. Document title
+9. Document title
 
    The title of the document should clearly state the main subject of
    the document and it's contents. Each word of the document title must
@@ -286,45 +297,34 @@ SPEC 0000               Specification Format                August 2018
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 Bron                                                           [Page 5]
 SPEC 0000               Specification format                August 2018
 
+10. Informative resources
 
+   [CP437]    IBM Code page 437
+              https://en.wikipedia.org/wiki/Code_page_437
 
+   [RFC20]    ASCII format for Network Interchange
+              Vint Cerf
+              https://tools.ietf.org/html/rfc20
 
+   [RFC822]   Standard for ARPA Internet Text Messages
+              David H. Crocker
+              https://tools.ietf.org/html/rfc822
 
+   [RFC1111]  RFC Instructions
+              J. Postel
+              https://tools.ietf.org/html/rfc1111
 
+   [RFC2119]  RFC Key Words
+              S. Bradner
+              https://tools.ietf.org/html/rfc2119
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   [RFC7322]  RFC Style Guid
+              H. Flanagan
+              S. Ginoza
+              https://tools.ietf.org/html/rfc7322
 
 
 
@@ -358,3 +358,63 @@ SPEC 0000               Specification format                August 2018
 
 
 Bron                                                           [Page 6]
+SPEC 0000               Specification format                August 2018
+
+11. Author information
+
+   Name ....... Robin Bron
+   Nickname ... Finwo
+   EMail ...... robin@finwo.nl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bron                                                           [Page 7]
