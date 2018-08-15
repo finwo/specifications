@@ -1,5 +1,7 @@
 # TrackThis Code Style Guides
 
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
 Most open-source projects have their own common code style, whether documented
 or not. A style guide is a set of (sometimes arbitary) conventions about how to
 write code for those projects. It is much easier to understand a large codebase
@@ -16,8 +18,12 @@ This project aims to cover all grounds of the languages used within trackthis
 and to provide tools to enforce the guide. A list of languages included in this
 guide can be found below.
 
-The style guides in this project are licensed under the CC-By 4.0 License,
-which encourages you to share these documents. See
-https://creativecommons.org/licenses/by/4.0/ for more details.
+-----------------------------------------------------------------------
 
-<a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+TrackThis Style Guide (c) by Ratus B.V.
+
+TrackThis Style Guide is licensed under a
+Creative Commons Attribution 4.0 International License
+
+You should have received a copy of the license along with this work. If not,
+see <http://creativecommons.org/licenses/by/4.0/>
