@@ -2,7 +2,8 @@ Specification: 0000                                          Robin Bron
                                                              Ratus B.V.
                                                             August 2018
 
-                     Specification requirements
+
+                        Specification format
 
 Copyright Notice
 
@@ -54,9 +55,66 @@ Copyright Notice
 
 
 
-
 Bron                                                           [Page 1]
-SPEC 0000            Specification requirements             August 2018
+SPEC 0000               Specification format                August 2018
+
+Table of contents
+
+   1. Character encoding ............................................ 3
+   2. Line definition ............................................... 3
+      2.1 Line numbering ............................................ 3
+   3. Pages ......................................................... 3
+      3.1 Page header ............................................... 3
+      3.2 Page footer ............................................... 3
+   4. Paragraphs .................................................... 3
+   5. Document header ............................................... 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bron                                                           [Page 2]
+SPEC 0000               Specification format                August 2018
 
 1. Character Encoding
 
@@ -70,10 +128,11 @@ SPEC 0000            Specification requirements             August 2018
    line feed character. For the sake of and clarity, the ending line
    feed character is part of the line.
 
-   Lines are not allowed to be longer than 72 characters, excluding the
-   ending line feed.
+   Lines are not allowed to be longer than 72 characters, including the
+   ending line feed character. A line is called a blank line if it
+   consists of only a line feed charachter.
 
-3. Line numbering
+2.1. Line numbering
 
    To ensure the following page dimension section is clear, we need to
    define how lines are numbered.
@@ -83,15 +142,44 @@ SPEC 0000            Specification requirements             August 2018
    line 0. Numbering lines from 0 instead of 1 gives us an advantage of
    clarity in the next section.
 
-4. Page dimensions
+3. Pages
 
-   The size of a page is fixed at 58 lines. That means for every line
-   number n, the line is the start of a new page when n mod 58 = 0.
+   A page is a sequence of 58 lines. That means for every line number
+   n, the line is the start of a new page when n mod 58 = 0.
 
-5.
+3.1 Page header
+
+   The first line of a page must consist of a left-aligned spec number
+   indicator, a centered (short) document title and a right-aligned
+   month indicator. The second line of a page must always be blank.
+
+3.2 Page footer
+
+   The last line of a page must consist of a left-align last name of
+   the author and a right-aligned page number between square brackets.
+   The second-to-last line of a page must be blank, just like the
+   second line of a page.
+
+4. Paragraphs
+
+   A paragraph is a sequence of consecutive lines containing characters
+   other than only a line feed. Paragraphs are separated by either a
+   blank line or a page break. Paragraphs are not allowed to span
+   multiple pages, limiting their size to 54 lines.
 
 
 
-Bron                                                           [Page 2]
-SPEC 0000            Specification requirements             August 2018
+
+
 Bron                                                           [Page 3]
+SPEC 0000               Specification format                August 2018
+
+5. Document header
+
+   The first lines of the first page of a specification document shall
+   always contain left-aligned headers (see 5.1) and right-aligned
+   identification and a right-aligned date.
+
+   
+
+Bron                                                           [Page 4]
