@@ -68,9 +68,9 @@ Table of contents
       3.2 Page footer ............................................... 3
    4. Paragraphs .................................................... 3
    5. Document header ............................................... 4
-
-
-
+      5.1. Descriptive header ....................................... 4
+      5.2. Author identification ....................................
+      5.3. Publish date .............................................
 
 
 
@@ -151,7 +151,8 @@ SPEC 0000               Specification format                August 2018
 
    The first line of a page must consist of a left-aligned spec number
    indicator, a centered (short) document title and a right-aligned
-   month indicator. The second line of a page must always be blank.
+   publishing date (see 5.3). The second line of a page must always be
+   blank.
 
 3.2 Page footer
 
@@ -170,16 +171,45 @@ SPEC 0000               Specification format                August 2018
 
 
 
-
 Bron                                                           [Page 3]
 SPEC 0000               Specification format                August 2018
 
 5. Document header
 
    The first lines of the first page of a specification document shall
-   always contain left-aligned headers (see 5.1) and right-aligned
-   identification and a right-aligned date.
+   always contain left-aligned description headers (see 5.1) and
+   right-aligned author identification and a right-aligned publishing
+   date.
 
-   
+5.1. Descriptive header
+
+   Each descriptive header is made up of a key and a value. Whitespace
+   is not allowed in both the key and the value. Whitespace can only be
+   included in the value by wrapping the value in quote characters.
+
+   The key of the header consists of all characters of the line up to
+   the first semicolon, excluding the semicolon itself and omitting all
+   white-space characters.
+
+   The value of the header starts at the first non-whitespace character
+   after the first semicolon of the line. If the first character is a
+   quote, the value ends at the next quote in the line. If the first
+   character is not a quote, the value ends at the next whitespace
+   character.
+
+5.2. Author identification
+
+   In order to allow authors to take some credit and to track who has
+   written what, the author's name must be added right-aligned on the
+   first line of the first page of the document. To prevent mixing
+   notations between documents, the names should be written as only the
+   first letters of all given names in capitals, separated by dots, a
+   space and the Family name starting with a capital.
+
+5.3. Publish date
+
+   Because a document is unlikely to have been written within a day, a
+   publish date is simply the month's name starting with a capital
+   followed by the year, both following the Gregorian calendar.
 
 Bron                                                           [Page 4]
