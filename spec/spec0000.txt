@@ -3,7 +3,7 @@ Specification: 0000                                          Robin Bron
                                                             August 2018
 
 
-                        Specification format
+                        Specification Format
 
 Copyright Notice
 
@@ -55,8 +55,10 @@ Copyright Notice
 
 
 
+
+
 Bron                                                           [Page 1]
-SPEC 0000               Specification format                August 2018
+SPEC 0000               Specification Format                August 2018
 
 Table of contents
 
@@ -69,9 +71,11 @@ Table of contents
    4. Paragraphs .................................................... 3
    5. Document header ............................................... 4
       5.1. Descriptive header ....................................... 4
-      5.2. Author identification ....................................
-      5.3. Publish date .............................................
-
+      5.2. Short author identification .............................. 4
+      5.3. Publish date ............................................. 4
+   6. Document footer ............................................... 4
+   7. Section titles ................................................ 5
+   8. Document title ................................................ 5
 
 
 
@@ -114,7 +118,7 @@ Table of contents
 
 
 Bron                                                           [Page 2]
-SPEC 0000               Specification format                August 2018
+SPEC 0000               Specification Format                August 2018
 
 1. Character Encoding
 
@@ -144,8 +148,8 @@ SPEC 0000               Specification format                August 2018
 
 3. Pages
 
-   A page is a sequence of 58 lines. That means for every line number
-   n, the line is the start of a new page when n mod 58 = 0.
+   A page is a sequence of 60 lines. That means for every line number
+   n, the line is the start of a new page when n mod 60 = 0.
 
 3.1 Page header
 
@@ -166,13 +170,15 @@ SPEC 0000               Specification format                August 2018
    A paragraph is a sequence of consecutive lines containing characters
    other than only a line feed. Paragraphs are separated by either a
    blank line or a page break. Paragraphs are not allowed to span
-   multiple pages, limiting their size to 54 lines.
+   multiple pages, limiting their size to 56 lines.
+
+
 
 
 
 
 Bron                                                           [Page 3]
-SPEC 0000               Specification format                August 2018
+SPEC 0000               Specification Format                August 2018
 
 5. Document header
 
@@ -180,6 +186,12 @@ SPEC 0000               Specification format                August 2018
    always contain left-aligned description headers (see 5.1) and
    right-aligned author identification and a right-aligned publishing
    date.
+
+   Ensuring 2 blank lines between the initial lines (see 5.1 to 5.3)
+   and other text on the page, the document title (see 8) should be
+   noted in the top-middle of the first page of the document. Further
+   information on the first page should give a quick description of the
+   contents of the document.
 
 5.1. Descriptive header
 
@@ -197,14 +209,16 @@ SPEC 0000               Specification format                August 2018
    character is not a quote, the value ends at the next whitespace
    character.
 
-5.2. Author identification
+5.2. Short author identification
 
    In order to allow authors to take some credit and to track who has
    written what, the author's name must be added right-aligned on the
    first line of the first page of the document. To prevent mixing
    notations between documents, the names should be written as only the
    first letters of all given names in capitals, separated by dots, a
-   space and the Family name starting with a capital.
+   space and the Family name starting with a capital. When written by a
+   group of with a name, the short author identification string should
+   state the group's name.
 
 5.3. Publish date
 
@@ -212,4 +226,135 @@ SPEC 0000               Specification format                August 2018
    publish date is simply the month's name starting with a capital
    followed by the year, both following the Gregorian calendar.
 
+6. Document footer
+
+   The document should close, starting on a new page, with all
+   informative references which were used to write the document, noting
+   their keyword, document title it's author and if possible a URL to
+   the resource.
+
+   After the informative references, the document should end with one
+   or several pages dedicated to the information of the author(s) and
+   if possible their contact information.
+
 Bron                                                           [Page 4]
+SPEC 0000               Specification Format                August 2018
+
+7. Section titles
+
+   Section titles should be a short text about the subject the section
+   describes. Whether it is simply the keyword of what it explains, a
+   problem statement or other type of text is up to the author as long
+   as it's relevant to the section's body.
+
+   A section title must start with a capital character & not contain
+   any other capital letters, excluding where they are required in
+   names or abbreviations.
+
+8. Document title
+
+   The title of the document should clearly state the main subject of
+   the document and it's contents. Each word of the document title must
+   start with a capital character when noted as the title of the
+   document.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bron                                                           [Page 5]
+SPEC 0000               Specification format                August 2018
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bron                                                           [Page 6]
