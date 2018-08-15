@@ -130,7 +130,7 @@ SPEC 0000               Specification Format                August 2018
 
 2. Character Encoding
 
-   Plain-text files for specifications must use the CP437 standard with
+   Plain-text files for specifications MUST use the CP437 standard with
    the exclusion of character code 0x0A which represents a line feed as
    specified in RFC20.
 
@@ -140,9 +140,9 @@ SPEC 0000               Specification Format                August 2018
    line feed character. For the sake of and clarity, the ending line
    feed character is part of the line.
 
-   Lines are not allowed to be longer than 72 characters, including the
-   ending line feed character. A line is called a blank line if it
-   consists of only a line feed charachter.
+   Lines MUST NOT exceed 72 characters in length, including the ending
+   line feed character. A line is called a blank line if it consists of
+   only a line feed charachter.
 
 3.1. Line numbering
 
@@ -161,14 +161,14 @@ SPEC 0000               Specification Format                August 2018
 
 4.1 Page header
 
-   The first line of a page must consist of a left-aligned spec number
-   indicator, a centered (short) document title and a right-aligned
-   publishing date (see 6.3). The second line of a page must always be
-   blank.
+   The first line of a page SHOULD consist of a left-aligned spec
+   number indicator, a centered (short) document title and a
+   right-aligned publishing date (see 6.3). The second line of a page
+   MUST always be blank, excluding the first page of the document.
 
 4.2 Page footer
 
-   The last line of a page must consist of a left-align last name of
+   The last line of a page MUST consist of a left-align last name of
    the author and a right-aligned page number between square brackets.
    The second-to-last line of a page must be blank, just like the
    second line of a page.
@@ -184,21 +184,22 @@ SPEC 0000               Specification Format                August 2018
 
    A paragraph is a sequence of consecutive lines containing characters
    other than only a line feed. Paragraphs are separated by either a
-   blank line or a page break. Paragraphs are not allowed to span
-   multiple pages, limiting their size to 56 lines.
+   blank line or a page break. Paragraphs MUST NOT span multiple pages,
+   limiting their size to 56 lines.
 
 6. Document header
 
-   The first lines of the first page of a specification document shall
+   The first lines of the first page of a specification document SHALL
    always contain left-aligned description headers (see 6.1) and
    right-aligned author identification and a right-aligned publishing
    date.
 
-   Ensuring 2 blank lines between the initial lines (see 6.1 to 6.3)
-   and other text on the page, the document title (see 9) should be
-   noted in the top-middle of the first page of the document. Further
-   information on the first page should give a quick description of the
-   contents of the document.
+   After the initial lines (see 6.1 to 6.3), the document title is
+   REQUIRED to be written on the first page of the document. For it's
+   specification, see section 9.
+
+   Further information on the first page should give a quick
+   description of the contents of the document.
 
 6.1. Descriptive header
 
@@ -219,12 +220,12 @@ SPEC 0000               Specification Format                August 2018
 6.2. Short author identification
 
    In order to allow authors to take some credit and to track who has
-   written what, the author's name must be added right-aligned on the
+   written what, the author's name MUST be added right-aligned on the
    first line of the first page of the document. To prevent mixing
-   notations between documents, the names should be written as only the
+   notations between documents, the names SHOULD be written as only the
    first letters of all given names in capitals, separated by dots, a
    space and the Family name starting with a capital. When written by a
-   group of with a name, the short author identification string should
+   group with a name, the short author identification string SHOULD
    state the group's name.
 
 6.3. Publish date
@@ -236,31 +237,30 @@ SPEC 0000               Specification Format                August 2018
 
 
 
-
 Bron                                                           [Page 4]
 SPEC 0000               Specification Format                August 2018
 
 7. Document footer
 
-   The document should close, starting on a new page, with all
+   The document SHOULD close, starting on a new page, with all
    informative resources which were used to write the document, noting
-   their keyword, document title it's author and if possible a URL to
-   the resource.
+   their keyword and document title. When possible, a URL to the
+   resource SHOULD be included.
 
-   After the informative resources, the document should end with one
+   After the informative resources, the document SHOULD end with one
    or several pages dedicated to the information of the author(s) and
    if possible their contact information.
 
 8. Section titles
 
-   Section titles should be a short text about the subject the section
+   Section titles SHOULD be a short text about the subject the section
    describes. Whether it is simply the keyword of what it explains, a
    problem statement or other type of text is up to the author as long
    as it's relevant to the section's body.
 
-   A section title must start with a capital character & not contain
-   any other capital letters, excluding where they are required in
-   names or abbreviations.
+   A section title MUST start with a capital character & MUST NOT
+   contain any other capital letters, excluding where they are required
+   in names or abbreviations.
 
 9. Document title
 
@@ -269,10 +269,10 @@ SPEC 0000               Specification Format                August 2018
    start with a capital character when noted as the title of the
    document.
 
-
-
-
-
+   On the first page of the document, the title should be centered
+   horizontally and have at least 2 blank lines both above and below
+   it. The document title SHOULD be as close to the document's
+   descriptive headers.
 
 
 
