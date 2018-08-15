@@ -1,0 +1,97 @@
+Specification: 0000                                          Robin Bron
+                                                             Ratus B.V.
+                                                            August 2018
+
+                     Specification requirements
+
+Copyright Notice
+
+   This document is licensed under a
+   Creative Commons Attribution 4.0 International License
+
+   You should have received a copy of the license along with this work.
+   If not, see <http://creativecommons.org/licenses/by/4.0/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bron                                                           [Page 1]
+SPEC 0000            Specification requirements             August 2018
+
+1. Character Encoding
+
+   Plain-text files for specifications must use the IBM Code page 437
+   with the exclusion of character code 0x0A which represents a
+   line feed as specified in IETF-RFC20.
+
+2. Line definition
+
+   A line of text is a sequence of 0 or more characters followed by a
+   line feed character. For the sake of and clarity, the ending line
+   feed character is part of the line.
+
+   Lines are not allowed to be longer than 72 characters, excluding the
+   ending line feed.
+
+3. Line numbering
+
+   To ensure the following page dimension section is clear, we need to
+   define how lines are numbered.
+
+   Assuming a document is in digital format[1] and has a length of
+   greater than 0 bytes, the first character in the document is part of
+   line 0. Numbering lines from 0 instead of 1 gives us an advantage of
+   clarity in the next section.
+
+4. Page dimensions
+
+   The size of a page is fixed at 58 lines. That means for every line
+   number n, the line is the start of a new page when n mod 58 = 0.
+
+5.
+
+
+
+Bron                                                           [Page 2]
+SPEC 0000            Specification requirements             August 2018
+Bron                                                           [Page 3]
