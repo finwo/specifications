@@ -3,16 +3,16 @@ Specification: 0001                                          Robin Bron
                                                             August 2018
 
 
-                         Javascript Styling
+                         JavaScript Styling
 
 
+This document describes a set of rules for JavaScript source code. To
+apply these rules, include the next paragraph near the beginning of the
+documentation of the project or near the beginning of the generic
+README file of the project:
 
-
-
-
-
-
-
+   The JavaScript source code in this project must adhere to the rules
+   as described in RATUS/SPEC0001
 
 
 
@@ -58,7 +58,7 @@ Copyright Notice
    If not, see <http://creativecommons.org/licenses/by/4.0/>
 
 Bron                                                           [Page 1]
-SPEC 0001                Javascript Styling                 August 2018
+SPEC 0001                JavaScript Styling                 August 2018
 
 Table of contents
 
@@ -118,7 +118,7 @@ Table of contents
 
 
 Bron                                                           [Page 2]
-SPEC 0001                Javascript Styling                 August 2018
+SPEC 0001                JavaScript Styling                 August 2018
 
    6. Policies ..................................................... 14
       6.1. Unspecified styling ..................................... 14
@@ -178,7 +178,7 @@ SPEC 0001                Javascript Styling                 August 2018
 
 
 Bron                                                           [Page 3]
-SPEC 0001                Javascript Styling                 August 2018
+SPEC 0001                JavaScript Styling                 August 2018
 
 1. Introduction
 
@@ -238,7 +238,7 @@ SPEC 0001                Javascript Styling                 August 2018
 
 
 Bron                                                           [Page 4]
-SPEC 0001                Javascript Styling                 August 2018
+SPEC 0001                JavaScript Styling                 August 2018
 
 3. Formatting
 
@@ -298,7 +298,7 @@ SPEC 0001                Javascript Styling                 August 2018
 
 
 Bron                                                           [Page 5]
-SPEC 0001                Javascript Styling                 August 2018
+SPEC 0001                JavaScript Styling                 August 2018
 
    3.4. Number literals
 
@@ -358,7 +358,7 @@ SPEC 0001                Javascript Styling                 August 2018
       or arrow function literal to be consistent with class literals.
 
 Bron                                                           [Page 6]
-SPEC 0001                Javascript Styling                 August 2018
+SPEC 0001                JavaScript Styling                 August 2018
 
    3.7. Functions
 
@@ -418,7 +418,7 @@ SPEC 0001                Javascript Styling                 August 2018
 
 
 Bron                                                           [Page 7]
-SPEC 0001                Javascript Styling                 August 2018
+SPEC 0001                JavaScript Styling                 August 2018
 
          3.7.4.2. Rest parameters
 
@@ -478,7 +478,7 @@ SPEC 0001                Javascript Styling                 August 2018
 
 
 Bron                                                           [Page 8]
-SPEC 0001                Javascript Styling                 August 2018
+SPEC 0001                JavaScript Styling                 August 2018
 
       3.8.4. Prototype manipulation
 
@@ -538,7 +538,7 @@ SPEC 0001                Javascript Styling                 August 2018
 
 
 Bron                                                           [Page 9]
-SPEC 0001                Javascript Styling                 August 2018
+SPEC 0001                JavaScript Styling                 August 2018
 
 4. Naming
 
@@ -598,7 +598,7 @@ SPEC 0001                Javascript Styling                 August 2018
 
 
 Bron                                                          [Page 10]
-SPEC 0001                Javascript Styling                 August 2018
+SPEC 0001                JavaScript Styling                 August 2018
 
    5.3. Description
 
@@ -658,7 +658,7 @@ SPEC 0001                Javascript Styling                 August 2018
 
 
 Bron                                                          [Page 11]
-SPEC 0001                Javascript Styling                 August 2018
+SPEC 0001                JavaScript Styling                 August 2018
 
    5.4. Tags
 
@@ -718,7 +718,7 @@ SPEC 0001                Javascript Styling                 August 2018
 
 
 Bron                                                          [Page 12]
-SPEC 0001                Javascript Styling                 August 2018
+SPEC 0001                JavaScript Styling                 August 2018
 
    5.5. Line wrapping
 
@@ -778,7 +778,7 @@ SPEC 0001                Javascript Styling                 August 2018
 
 
 Bron                                                          [Page 13]
-SPEC 0001                Javascript Styling                 August 2018
+SPEC 0001                JavaScript Styling                 August 2018
 
    5.10. Property comments
 
@@ -838,7 +838,7 @@ SPEC 0001                Javascript Styling                 August 2018
 
 
 Bron                                                          [Page 14]
-SPEC 0001                Javascript Styling                 August 2018
+SPEC 0001                JavaScript Styling                 August 2018
 
       6.3.1. Reformatting existing code
 
@@ -898,7 +898,7 @@ SPEC 0001                Javascript Styling                 August 2018
 
 
 Bron                                                          [Page 15]
-SPEC 0001                Javascript Styling                 August 2018
+SPEC 0001                JavaScript Styling                 August 2018
 
 7. Informative resources
 
@@ -958,7 +958,7 @@ SPEC 0001                Javascript Styling                 August 2018
 
 
 Bron                                                          [Page 16]
-SPEC 0001                Javascript Styling                 August 2018
+SPEC 0001                JavaScript Styling                 August 2018
 
 8. Author information
 
