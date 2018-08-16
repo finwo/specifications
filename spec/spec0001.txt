@@ -4,16 +4,7 @@ Specification: 0001                                          Robin Bron
 
 
                          Javascript Styling
-Bron                                                          [Page 11]
-SPEC 0001                Javascript Styling                 August 2018
 
-Copyright Notice
-
-   This document is licensed under a
-   Creative Commons Attribution 4.0 International License
-
-   You should have received a copy of the license along with this work.
-   If not, see <http://creativecommons.org/licenses/by/4.0/>
 
 
 
@@ -58,6 +49,13 @@ Copyright Notice
 
 
 
+Copyright Notice
+
+   This document is licensed under a
+   Creative Commons Attribution 4.0 International License
+
+   You should have received a copy of the license along with this work.
+   If not, see <http://creativecommons.org/licenses/by/4.0/>
 
 Bron                                                           [Page 1]
 SPEC 0001                Javascript Styling                 August 2018
@@ -117,6 +115,11 @@ Table of contents
       5.10. Property comments
       5.11. Nullability
       5.12. Template parameter types
+
+
+Bron                                                           [Page 2]
+SPEC 0001                Javascript Styling                 August 2018
+
    6. Policies
       6.1. Unspecified styling
       6.2. Deprecation
@@ -126,6 +129,56 @@ Table of contents
       6.4. Local style rules
       6.5. Generated code
       6.6. Third-party code
+   7. Informative resources
+   8. Author information
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bron                                                           [Page 3]
+SPEC 0001                Javascript Styling                 August 2018
 
 1. Introduction
 
@@ -184,6 +237,9 @@ Table of contents
          used, depending only on which makes the code easier to read
          and understand.
 
+Bron                                                           [Page 4]
+SPEC 0001                Javascript Styling                 August 2018
+
 3. Formatting
 
    3.1. Braces
@@ -238,6 +294,11 @@ Table of contents
       multiple lines in which case they SHOULD adhere the indent level
       of the enclosing block if the whitespace does not affect
       functionality or complicates the code.
+
+
+
+Bron                                                           [Page 5]
+SPEC 0001                Javascript Styling                 August 2018
 
    3.4. Number literals
 
@@ -296,6 +357,9 @@ Table of contents
       shorthand in place of a colon immediately followed by a function
       or arrow function literal to be consistent with class literals.
 
+Bron                                                           [Page 6]
+SPEC 0001                Javascript Styling                 August 2018
+
    3.7. Functions
 
       3.7.1. Function literals
@@ -352,6 +416,10 @@ Table of contents
             than a small handful of optional parameters that do not
             have a natural order.
 
+
+Bron                                                           [Page 7]
+SPEC 0001                Javascript Styling                 August 2018
+
          3.7.4.2. Rest parameters
 
             Use a rest parameter instead of accessing the special
@@ -404,6 +472,13 @@ Table of contents
          after the call to the super class constructor, if a super
          class exists. Methods SHOULD be defined on the prototype of
          the constructor.
+
+
+
+
+
+Bron                                                           [Page 8]
+SPEC 0001                Javascript Styling                 August 2018
 
       3.8.4. Prototype manipulation
 
@@ -461,6 +536,10 @@ Table of contents
          as functions for coercing (which is preferred over using "+"
          or concatenating the empty string) or creating Symbols.
 
+
+Bron                                                           [Page 9]
+SPEC 0001                Javascript Styling                 August 2018
+
 4. Naming
 
    4.1. Rules for all identifiers
@@ -513,6 +592,14 @@ Table of contents
       overviews to allow the user to skim the documentation in search
       of the required template.
 
+
+
+
+
+
+Bron                                                          [Page 10]
+SPEC 0001                Javascript Styling                 August 2018
+
    5.3. Description
 
       The description contains concise information about the function
@@ -531,6 +618,47 @@ Table of contents
       annotations that can be substituted for a specialized type of
       information (such as {@link}). Inline tags MUST always be
       surrounded by braces.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bron                                                          [Page 11]
+SPEC 0001                Javascript Styling                 August 2018
 
    5.4. Tags
 
@@ -585,6 +713,13 @@ Table of contents
          @deprecated  Indicates the documented element is deprecated
                       and this SHOULD not be used in new code.
 
+
+
+
+
+Bron                                                          [Page 12]
+SPEC 0001                Javascript Styling                 August 2018
+
    5.5. Line wrapping
 
       Line-wrapped block texts MUST be indented four spaces or be
@@ -637,6 +772,13 @@ Table of contents
       Anonymous functions do not require JSDoc, though parameters may
       be specified inline if the automatic type inference is
       insufficient.
+
+
+
+
+
+Bron                                                          [Page 13]
+SPEC 0001                Javascript Styling                 August 2018
 
    5.10. Property comments
 
@@ -694,6 +836,10 @@ Table of contents
       a position on some issue, or may be in non-TrackThis Style for
       any other reason.
 
+
+Bron                                                          [Page 14]
+SPEC 0001                Javascript Styling                 August 2018
+
       6.3.1. Reformatting existing code
 
          When working on the file, only reformat the functions and/or
@@ -742,7 +888,19 @@ Table of contents
       package, you MUST follow the style guide supplied by that project
       if available.
 
-N. Informative resources
+
+
+
+
+
+
+
+
+
+Bron                                                          [Page 15]
+SPEC 0001                Javascript Styling                 August 2018
+
+7. Informative resources
 
    [JSGUIDE]     Google JavaScript Style Guide
                  https://google.github.io/styleguide/jsguide.html
@@ -765,7 +923,44 @@ N. Informative resources
                  F. Yergeau
                  https://tools.ietf.org/html/rfc3629
 
-N. Author information
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bron                                                          [Page 16]
+SPEC 0001                Javascript Styling                 August 2018
+
+8. Author information
 
    Name ....... Robin Bron
    Nickname ... Finwo
@@ -822,4 +1017,4 @@ N. Author information
 
 
 
-Bron                                                           [Page N]
+Bron                                                          [Page 17]
