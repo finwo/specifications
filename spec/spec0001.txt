@@ -80,7 +80,7 @@ Table of contents
       3.3. String literals .......................................... 4
       3.4. Number literals .......................................... 5
       3.5. Array literals ........................................... 5
-
+      3.6. Object literals .......................................... 5
 
 
 
@@ -257,11 +257,52 @@ SPEC 0001                Javascript Styling                 August 2018
       new array, unless used for allocating an empty array of a given
       length.
 
-      Do not define or use non-numeric properties on an array
+      Non-numeric properties on an array other than "length" or a
+      Symbol MUST NOT be used. Use a Map or Object instead.
 
+      Array literals MAY be used on the left-hand side of an assignment
+      to perform destructuring (such as when unpacking multiple values
+      from a single array or iterable). A final "rest" element MAY be
+      included (with no space between the "..." and the variable name).
 
+      Destructuring MAY also be used for function parameters (note that
+      a parameter name is required but ignored). Always specify "[]" as
+      the default value if a destructured array parameter is optional,
+      and provide default values on the left hand side.
+
+      Array literals MAY include the spread operator (...) to flatten
+      elements out of one or more other iterables. The spread operator
+      SHOULD be used instead of more awkward constructs with
+      "Array.prototype". There is no space after the "...".
+
+   3.6. Object literals
+
+      A trailing comma SHOULD be used whenever there is a line break
+      between the final property and the closing brace.
+
+      While the Object constructor does not have the same problems as
+      the Array constructor, the Object constructor MUST NOT be used to
+      create a new object. Use an object literal instead.
+
+      When writing an object literal, unquoted keys and quoted keys
+      MUST NOT be used.
+
+      Computed property names are allowed and are considered quoted
+      keys (they MUST NOT be mixed with non-quoted keys) unless the
+      computed property is a symbol. Enum values may also be used for
+      computed keys, but should not be mixed with non-enum keys in the
+      same literal.
+
+      Methods SHOULD be defined on object literals using the method
+      shorthand in place of a colon immediately followed by a function
+      or arrow function literal to be consistent with class literals.
 
 Bron                                                           [Page 5]
+SPEC 0001                Javascript Styling                 August 2018
+
+
+
+Bron                                                           [Page 6]
 SPEC 0001                Javascript Styling                 August 2018
 
 
