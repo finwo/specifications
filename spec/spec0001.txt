@@ -560,11 +560,11 @@ SPEC 0001                Javascript Styling                 August 2018
       Class names ...................................... UpperCamelCase
       Method names ..................................... lowerCamelCase
       Enum names ....................................... UpperCamelCase
-      Constant names .................................... CONSTANT_CASE
+      Constant names ............................. SCREAMING_SNAKE_CASE
       Non-constant field names ......................... lowerCamelCase
       Parameter names .................................. lowerCamelCase
       Local variable names ............................. lowerCamelCase
-      Template parameter names .......................... CONSTANT_CASE
+      Template parameter names ................... SCREAMING_SNAKE_CASE
 
 5. JSDoc
 
@@ -902,32 +902,32 @@ SPEC 0001                Javascript Styling                 August 2018
 
 7. Informative resources
 
-   [JSGUIDE]     Google JavaScript Style Guide
-                 https://google.github.io/styleguide/jsguide.html
+   [JSGUIDE]              Google JavaScript Style Guide
+                          https://google.github.io/styleguide/jsguide
 
-   [STANDARDJS]  StandardJS standard style
-                 https://standardjs.com/rules.html
+   [STANDARDJS]           StandardJS standard style
+                          https://standardjs.com/rules
 
-   [kebab-case]  Special case styles
-                 https://en.wikipedia.org/wiki/Kebab_case
+   [kebab-case]           Special case styles
+                          https://en.wikipedia.org/wiki/Kebab_case
 
-   [RFC20]       ASCII format for Network Interchange
-                 Vint Cerf
-                 https://tools.ietf.org/html/rfc20
+   [camel-case]           Camel case
+                          https://en.wikipedia.org/wiki/Camel_case
 
-   [RFC2119]     RFC Key Words
-                 S. Bradner
-                 https://tools.ietf.org/html/rfc2119
+   [SCREAMING_SNAKE_CASE] Snake case
+                          https://en.wikipedia.org/wiki/Snake_case
 
-   [RFC3629]     UTF-8
-                 F. Yergeau
-                 https://tools.ietf.org/html/rfc3629
+   [RFC20]                ASCII format for Network Interchange
+                          Vint Cerf
+                          https://tools.ietf.org/html/rfc20
 
+   [RFC2119]              RFC Key Words
+                          S. Bradner
+                          https://tools.ietf.org/html/rfc2119
 
-
-
-
-
+   [RFC3629]              UTF-8
+                          F. Yergeau
+                          https://tools.ietf.org/html/rfc3629
 
 
 
