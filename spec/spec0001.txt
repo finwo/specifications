@@ -125,6 +125,7 @@ Table of contents
          6.3.2. Newly added code
       6.4. Local style rules
       6.5. Generated code
+      6.6. Third-party code
 
 1. Introduction
 
@@ -681,7 +682,7 @@ Table of contents
 
    6.2. Deprecation
 
-      Mark deprecated methods, classes, inferfaces or functions with
+      Mark deprecated methods, classes, interfaces or functions with
       @deprecated annotations. A deprecation comment MUST include
       simple, clear directions for people to fix their call sites.
 
@@ -721,6 +722,25 @@ Table of contents
       excessive rules which serve no purpose. The style guide does not
       seek to define style in every possible scenario and neither
       should you.
+
+   6.5. Generated code
+
+      Source code generate by any build process is not required to be
+      in TrackThis Style. However, any generated identifiers that will
+      by referenced from hand-written code must follow the naming
+      requirements. As a special exception, such identifiers are
+      allowed to contain underscores, which may help to avoid conflicts
+      with hand-written identifiers.
+
+   6.6. Third-party code
+
+      This style specification does not apply to third-party code used
+      within the package. When working on third-party code embedded in
+      the package, section 6.3 applies.
+
+      When working on third-party code which is not embedded in the
+      package, you MUST follow the style guide supplied by that project
+      if available.
 
 N. Informative resources
 
