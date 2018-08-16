@@ -81,11 +81,11 @@ Table of contents
       3.4. Number literals .......................................... 5
       3.5. Array literals ........................................... 5
       3.6. Object literals .......................................... 5
-
-
-
-
-
+      3.7. Functions ................................................ 6
+         3.7.1. Function literals ................................... 6
+         3.7.2. Arrow function literals ............................. 6
+         3.7.3. Generator functions ................................. 6
+         3.7.4. Parameters .......................................... 6
 
 
 
@@ -300,314 +300,89 @@ SPEC 0001                Javascript Styling                 August 2018
 Bron                                                           [Page 5]
 SPEC 0001                Javascript Styling                 August 2018
 
+   3.7. Functions
+
+      3.7.1. Function literals
+
+         Exported top-level functions MAY be defined directly on the
+         exports object or else declared locally and exported
+         separately. Non-exported functions are encouraged and should
+         not be declared private. Functions MAY contain nested function
+         definitions. If it is useful to give the function a name, it
+         should be assigned to a local const.
+
+      3.7.2. Arrow function literals
+
+         Arrow function literals SHOULD be used instead of "function"
+         literals whenever applicable, unless the code is easier to
+         read and understand when not.
+
+         The right-hand side of the arrow MUST be either a single
+         expression or a block. Multiple expressions MAY NOT be
+         concatenated into a single expression using commas when used
+         as the only statement of an arrow function.
+
+      3.7.3. Generator functions
+
+         Generators enable a number of useful abstractions and MAY be
+         used as needed. When defining generator functions, attach the
+         "*" to the "function" keyword when present and separate it
+         with a space from the name of the function. When using
+         delegating yields, attach the "*" to the "yield" keyword.
+
+      3.7.4. Parameters
+
+         3.7.4.1. Default parameters
+
+            Function parameters MUST be typed with JSDoc annotations in
+            the JSDoc preceding the function's definition,
+
+            Parameter types MAY be specified inline, immediately before
+            the parameter name. Inline and "@param" type annotations
+            MUST NOT be mixed in the same function definition.
+
+            Optional parameters SHOULD be indicated by using the equals
+            operator to set a default value for that parameter, even if
+            the default value should be undefined. Optional parameters
+            indicated by a default value MUST include spaces on both
+            sides of the equals operator, be named exactly like
+            required parameters (i.e. not prefixed), use the "=" suffix
+            in their JSDoc type and not use initializers that produce
+            observable side effects. Optional parameters SHOULD come
+            after required parameters.
+
+            Use default parameter values sparingly. Prefer
+            destructuring to create readable APIs when there are more
+            than a small handful of optional parameters that do not
+            have a natural order.
 
 
 Bron                                                           [Page 6]
 SPEC 0001                Javascript Styling                 August 2018
 
 
-   [JSGUIDE]  Google JavaScript Style Guide
-              https://google.github.io/styleguide/jsguide.html
+   [JSGUIDE]     Google JavaScript Style Guide
+                 https://google.github.io/styleguide/jsguide.html
 
-   [RFC20]    ASCII format for Network Interchange
-              Vint Cerf
-              https://tools.ietf.org/html/rfc20
+   [STANDARDJS]  StandardJS standard style
+                 https://standardjs.com/rules.html
 
-   [RFC2119]  RFC Key Words
-              S. Bradner
-              https://tools.ietf.org/html/rfc2119
+   [RFC20]       ASCII format for Network Interchange
+                 Vint Cerf
+                 https://tools.ietf.org/html/rfc20
 
-   [RFC3629]  UTF-8
-              F. Yergeau
-              https://tools.ietf.org/html/rfc3629
+   [RFC2119]     RFC Key Words
+                 S. Bradner
+                 https://tools.ietf.org/html/rfc2119
+
+   [RFC3629]     UTF-8
+                 F. Yergeau
+                 https://tools.ietf.org/html/rfc3629
 
 Bron                                                           [Page N]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-SPEC 0000               Specification Format                August 2018
-
-
-
-1. Conventions
-
-   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
-   "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and
-   "OPTIONAL" in this document are to be interpreted as described in
-   RFC2119 when, and only when, they appear in all capitals, as shown
-   here.
-
-2. Character Encoding
-
-   Plain-text files for specifications must use the CP437 standard with
-   the exclusion of character code 0x0A which represents a line feed as
-   specified in RFC20.
-
-3. Line definition
-
-   A line of text is a sequence of 0 or more characters followed by a
-   line feed character. For the sake of and clarity, the ending line
-   feed character is part of the line.
-
-   Lines are not allowed to be longer than 72 characters, including the
-   ending line feed character. A line is called a blank line if it
-   consists of only a line feed charachter.
-
-3.1. Line numbering
-
-   To ensure the following page dimension section is clear, we need to
-   define how lines are numbered.
-
-   Assuming a document is in digital format[1] and has a length of
-   greater than 0 bytes, the first character in the document is part of
-   line 0. Numbering lines from 0 instead of 1 gives us an advantage of
-   clarity in the next section.
-
-4. Pages
-
-   A page is a sequence of 60 lines. That means for every line number
-   n, the line is the start of a new page when n mod 60 = 0.
-
-4.1 Page header
-
-   The first line of a page must consist of a left-aligned spec number
-   indicator, a centered (short) document title and a right-aligned
-   publishing date (see 6.3). The second line of a page must always be
-   blank.
-
-4.2 Page footer
-
-   The last line of a page must consist of a left-align last name of
-   the author and a right-aligned page number between square brackets.
-   The second-to-last line of a page must be blank, just like the
-   second line of a page.
-
-
-
-
-
-Bron                                                           [Page 3]
-SPEC 0000               Specification Format                August 2018
-
-5. Paragraphs
-
-   A paragraph is a sequence of consecutive lines containing characters
-   other than only a line feed. Paragraphs are separated by either a
-   blank line or a page break. Paragraphs are not allowed to span
-   multiple pages, limiting their size to 56 lines.
-
-6. Document header
-
-   The first lines of the first page of a specification document shall
-   always contain left-aligned description headers (see 6.1) and
-   right-aligned author identification and a right-aligned publishing
-   date.
-
-   Ensuring 2 blank lines between the initial lines (see 6.1 to 6.3)
-   and other text on the page, the document title (see 9) should be
-   noted in the top-middle of the first page of the document. Further
-   information on the first page should give a quick description of the
-   contents of the document.
-
-6.1. Descriptive header
-
-   Each descriptive header is made up of a key and a value. Whitespace
-   is not allowed in both the key and the value. Whitespace can only be
-   included in the value by wrapping the value in quote characters.
-
-   The key of the header consists of all characters of the line up to
-   the first semicolon, excluding the semicolon itself and omitting all
-   white-space characters.
-
-   The value of the header starts at the first non-whitespace character
-   after the first semicolon of the line. If the first character is a
-   quote, the value ends at the next quote in the line. If the first
-   character is not a quote, the value ends at the next whitespace
-   character.
-
-6.2. Short author identification
-
-   In order to allow authors to take some credit and to track who has
-   written what, the author's name must be added right-aligned on the
-   first line of the first page of the document. To prevent mixing
-   notations between documents, the names should be written as only the
-   first letters of all given names in capitals, separated by dots, a
-   space and the Family name starting with a capital. When written by a
-   group of with a name, the short author identification string should
-   state the group's name.
-
-6.3. Publish date
-
-   Because a document is unlikely to have been written within a day, a
-   publish date is simply the month's name starting with a capital
-   followed by the year, both following the Gregorian calendar.
-
-
-
-
-
-Bron                                                           [Page 4]
-SPEC 0000               Specification Format                August 2018
-
-7. Document footer
-
-   The document should close, starting on a new page, with all
-   informative resources which were used to write the document, noting
-   their keyword, document title it's author and if possible a URL to
-   the resource.
-
-   After the informative resources, the document should end with one
-   or several pages dedicated to the information of the author(s) and
-   if possible their contact information.
-
-8. Section titles
-
-   Section titles should be a short text about the subject the section
-   describes. Whether it is simply the keyword of what it explains, a
-   problem statement or other type of text is up to the author as long
-   as it's relevant to the section's body.
-
-   A section title must start with a capital character & not contain
-   any other capital letters, excluding where they are required in
-   names or abbreviations.
-
-9. Document title
-
-   The title of the document should clearly state the main subject of
-   the document and it's contents. Each word of the document title must
-   start with a capital character when noted as the title of the
-   document.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Bron                                                           [Page 5]
 SPEC 0000               Specification format                August 2018
 
-10. Informative resources
-
-   [CP437]    IBM Code page 437
-              https://en.wikipedia.org/wiki/Code_page_437
-
-   [RFC20]    ASCII format for Network Interchange
-              Vint Cerf
-              https://tools.ietf.org/html/rfc20
-
-   [RFC822]   Standard for ARPA Internet Text Messages
-              David H. Crocker
-              https://tools.ietf.org/html/rfc822
-
-   [RFC1111]  RFC Instructions
-              J. Postel
-              https://tools.ietf.org/html/rfc1111
-
-   [RFC2119]  RFC Key Words
-              S. Bradner
-              https://tools.ietf.org/html/rfc2119
-
-   [RFC7322]  RFC Style Guid
-              H. Flanagan
-              S. Ginoza
-              https://tools.ietf.org/html/rfc7322
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Bron                                                           [Page 6]
-SPEC 0000               Specification format                August 2018
-
-11. Author information
+ Author information
 
    Name ....... Robin Bron
    Nickname ... Finwo
@@ -664,4 +439,4 @@ SPEC 0000               Specification format                August 2018
 
 
 
-Bron                                                           [Page 7]
+Bron                                                           [Page N]
