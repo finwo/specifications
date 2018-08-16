@@ -5,6 +5,50 @@ Specification: 0000                                          Robin Bron
 
                         Specification Format
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Copyright Notice
 
    This document is licensed under a
@@ -12,50 +56,6 @@ Copyright Notice
 
    You should have received a copy of the license along with this work.
    If not, see <http://creativecommons.org/licenses/by/4.0/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Bron                                                           [Page 1]
 SPEC 0000               Specification Format                August 2018
