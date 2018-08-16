@@ -17,13 +17,3 @@ their own requirements.
 
 - [SPEC0000](spec/spec0000.txt) Specification Format
 - [SPEC0001](spec/spec0001.txt) Javascript Styling
-
------------------------------------------------------------------------
-
-Ratus Specifications (c) by Ratus B.V.
-
-Ratus Specifictions are licensed under a
-Creative Commons Attribution 4.0 International License
-
-You should have received a copy of the license along with this work. If
-not, see <http://creativecommons.org/licenses/by/4.0/>
