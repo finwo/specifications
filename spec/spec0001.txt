@@ -86,21 +86,21 @@ Table of contents
          3.7.2. Arrow function literals ............................. 6
          3.7.3. Generator functions ................................. 6
          3.7.4. Parameters .......................................... 6
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            3.7.4.1. Default parameters ............................. 6
+            3.7.4.2. Rest parameters ................................ 7
+         3.7.5. Returns ............................................. 7
+         3.7.6. Spread operator ..................................... 7
+      3.8. Classes .................................................. 7
+         3.8.1. Constructors ........................................ 7
+         3.8.2. Fields .............................................. 7
+         3.8.3. ES5 class declarations .............................. 7
+         3.8.4. Prototype manipulation .............................. 8
+         3.8.5. Getters and setters ................................. 8
+      3.9. This ..................................................... 8
+      3.10. Disallowed features ..................................... 8
+   4. Naming ........................................................ 9
+      4.1. Rules for all identifiers ................................ 9
+      4.2. Rules by identifier type ................................. 9
 
 
 
@@ -360,12 +360,197 @@ SPEC 0001                Javascript Styling                 August 2018
 Bron                                                           [Page 6]
 SPEC 0001                Javascript Styling                 August 2018
 
+         3.7.4.2. Rest parameters
+
+            Use a rest parameter instead of accessing the special
+            arguments variable. Rest parameters are typed with a "..."
+            prefix in their JSDoc. The rest parameter MUST be the last
+            parameter in the list. There is no space between the "..."
+            and the parameter name. The rest parameter MUST NOT be
+            named "arguments" or any other word which confusingly
+            shadows built-in names.
+
+      3.7.5. Returns
+
+         Function return types MUST be specified in the JSDoc directly
+         above the function definition.
+
+      3.7.6. Spread operator
+
+         Function calls MAY use the spread operator. The spread
+         operator SHOULD be used in preference over
+         Function.prototype.apply when an array or iterable is unpacked
+         into multiple parameters of a variadic function. There MUST
+         NOT be a space between the spread operator and the array or
+         iterable.
+
+   3.8. Classes
+
+      3.8.1. Constructors
+
+         Constructors are OPTIONAL for concrete classes. Subclass
+         constructors MUST call "super()" before setting any fields or
+         otherwise accessing "this", unless required to do so in order
+         to acquite their goal.
+
+      3.8.2. Fields
+
+         All of a concrete object's fields (i.e. all properties other
+         than methods) MUST be set from within the constructor. Fields
+         that are never reassigned SHOULD be annotated with "@const".
+
+         Private fields SHOULD either be annotated with "@private" or
+         have a Symbol as key. Fields MUST NOT be set on a concrete
+         class' prototype.
+
+      3.8.3. ES5 class declarations
+
+         While ES6 classes are preferred, there are cases where ES6
+         classes may not be feasible.
+
+         Per-instance properties SHOULD be defined in the constructor
+         after the call to the super class constructor, if a super
+         class exists. Methods SHOULD be defined on the prototype of
+         the constructor.
+
+
+
+
+
+Bron                                                           [Page 7]
+SPEC 0001                Javascript Styling                 August 2018
+
+      3.8.4. Prototype manipulation
+
+         In ES6 class definitions, the prototype of the class SHOULD
+         NOT be manipulated directly. Ordinary implementation code has
+         no business manipulating these objects.
+
+         Mixins and modifications of the prototypes of builtin objects
+         SHALL NOT be used, unless part of framework code which
+         otherwise would resort to even-worse workarounds to avoid
+         doing so.
+
+      3.8.5. Getters and setters
+
+         The JavaScript getter and setter properties MUST NOT be used,
+         unless part of data-binding frameworks where they MAY be used
+         sparingly.
+
+   3.9. This
+
+      Only use the this builtin in class constructors and methods, or
+      in arrow functions defined within class constructors and methods.
+      Any other uses of this MUST have an explicit "@this" declared in
+      the immediately-enclosing function's JSDoc.
+
+      The this builtin SHOULD NOT be used to refer to the global
+      object, the context of an eval or the target of an event.
+
+   3.10. Disallowed features
+
+      The "with" keyword
+         The "with" keyword MUST NOT be used. It makes your code harder
+         to understand and has been banned in strict mode since ES5.
+
+      Dynamic code evaluation
+         The "eval" method and the "Function(...string)" constructor
+         MUST NOT be used outside of code loaders. These features are
+         potentially dangerous and simply do not work in CSP
+         environments.
+
+      Automatic semicolon insertion
+         Always terminate statements with semicolons, except for
+         function and class declarations.
+
+      Non-standard features
+         Non-standard features MUST NOT be used. This includes old
+         features that have been removed, new features that are not yet
+         standardized or proprietary that are only implemented in some
+         JavaScript environments. These features are only allowed if
+         the code being written is intended for only that environment.
+
+      Wrapper objects for primitive types
+         Never use the "new" keyword on primitive object wrappers nor
+         include them in type annotations. The wrappers MAY be called
+         as functions for coercing (which is preferred over using "+"
+         or concatenating the empty string) or creating Symbols.
+
+
+Bron                                                           [Page 8]
+SPEC 0001                Javascript Styling                 August 2018
+
+4. Naming
+
+   4.1. Rules for all identifiers
+
+      Identifiers MUST use only ASCII letters, digits, underscores and
+      the dollar sign.
+
+      Give as descriptive a name as possible, within reason. Do not
+      worry about saving horizontal space as it is far more important
+      to make your code immediately understandable by a new reader. Do
+      not use abbreviations that are ambiguous or unfamiliar to readers
+      outside your project and do not abbreviate by deleting letters
+      within a word.
+
+   4.2. Rules by identifier type
+
+      Package names ........................................ kebab-case
+      Class names ...................................... UpperCamelCase
+      Method names ..................................... lowerCamelCase
+      Enum names ....................................... UpperCamelCase
+      Constant names .................................... CONSTANT_CASE
+      Non-constant field names ......................... lowerCamelCase
+      Parameter names .................................. lowerCamelCase
+      Local variable names ............................. lowerCamelCase
+      Template parameter names .......................... CONSTANT_CASE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bron                                                           [Page 9]
+SPEC 0001                Javascript Styling                 August 2018
+
+
+N. Informative resources
 
    [JSGUIDE]     Google JavaScript Style Guide
                  https://google.github.io/styleguide/jsguide.html
 
    [STANDARDJS]  StandardJS standard style
                  https://standardjs.com/rules.html
+
+   [kebab-case]  Special case styles
+                 https://en.wikipedia.org/wiki/Kebab_case
 
    [RFC20]       ASCII format for Network Interchange
                  Vint Cerf
@@ -379,10 +564,43 @@ SPEC 0001                Javascript Styling                 August 2018
                  F. Yergeau
                  https://tools.ietf.org/html/rfc3629
 
-Bron                                                           [Page N]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bron                                                          [Page 10]
 SPEC 0000               Specification format                August 2018
 
- Author information
+N. Author information
 
    Name ....... Robin Bron
    Nickname ... Finwo
