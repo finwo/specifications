@@ -104,16 +104,27 @@ Table of contents
       4.1. Rules for all identifiers
       4.2. Rules by identifier type
    5. JSDoc
-      5.1. General form
-      5.2. Summary
-      5.3. Description
-      5.4. Tags
+      5.1.  General form
+      5.2.  Summary
+      5.3.  Description
+      5.4.  Tags
          5.4.1. JSDoc tag reference
-      5.5. Line wrapping
-      5.6. Top/file-level comments
-      5.7. Class comments
-      5.8. Enum and typedef comments
-      5.9. Method and function comments
+      5.5.  Line wrapping
+      5.6.  Top/file-level comments
+      5.7.  Class comments
+      5.8.  Enum and typedef comments
+      5.9.  Method and function comments
+      5.10. Property comments
+      5.11. Nullability
+      5.12. Template parameter types
+   6. Policies
+      6.1. Unspecified styling
+      6.2. Deprecation
+      6.3. Code not in TrackThis style
+         6.3.1. Reformatting existing code
+         6.3.2. Newly added code
+      6.4. Local style rules
+
 
 1. Introduction
 
@@ -531,40 +542,47 @@ Table of contents
          documentation generation tools (such as JsDossier) for purely
          documentation purposes.
 
-         Tag       Description
+         Tag          Description
 
-         @author   Document the author of a file or the owner of a
-         @owner    test, generally only used in the @fileoverview
-                   comment. Not recommended.
+         @author      Document the author of a file or the owner of a
+         @owner       test, generally only used in the @fileoverview
+                      comment. Not recommended.
 
-         @bug      Indicates what bugs the given test function
-                   regression tests. Multiple bugs should each have
-                   their own @bug line, to make searching for
-                   regression tests as easy as possible.
+         @bug         Indicates what bugs the given test function
+                      regression tests. Multiple bugs should each have
+                      their own @bug line, to make searching for
+                      regression tests as easy as possible.
 
-         @see      Reference a lookup to another class function or
-                   method, global function, file or URL.
+         @see         Reference a lookup to another class function or
+                      method, global function, file or URL.
 
-         @param    Indicates the type of a function or method
-                   parameter, optionally adding a description to
-                   further explain what the described parameter does.
+         @param       Indicates the type of a function or method
+                      parameter, optionally adding a description to
+                      further explain what the described parameter
+                      does.
 
-         @return   Indicates the return type of a function or method,
-                   optionally adding a description to further explain
-                   what the return value contains.
+         @return      Indicates the return type of a function or
+                      method, optionally adding a description to
+                      further explain what the return value contains.
 
-         @type     Indicate the documented element's type.
+         @type        Indicate the documented element's type.
 
-         @const    Describes the documented element is a constant
-                   variable, that it MUST NOT be reassigned later.
+         @const       Describes the documented element is a constant
+                      variable, that it MUST NOT be reassigned later.
 
-         @private  Describes the documented element is private and care
-                   MUST be taken to not expose the element to scopes
-                   other than the one it is declared in.
+         @private     Describes the documented element is private and
+                      care MUST be taken to not expose the element to
+                      scopes other than the one it is declared in.
 
-         @this     Indicates the documented element uses the "this"
-                   keyword and SHOULD be handled with care in relation
-                   to it's context.
+         @this        Indicates the documented element uses the "this"
+                      keyword and SHOULD be handled with care in
+                      relation to it's context.
+
+         @override    Indicates the documented method overrides the
+                      equally-named super class method.
+
+         @deprecated  Indicates the documented element is deprecated
+                      and this SHOULD not be used in new code.
 
    5.5. Line wrapping
 
@@ -595,15 +613,115 @@ Table of contents
       correctly use the class. Textual descriptions MAY be omitted on
       the constructor.
 
-
-
    5.8. Enum and typedef comments
 
       Enums and typedefs MUST be documented. Public enums and typedefs
       MUST have a non-empty description. Individual enum items may be
       documented with a JSDoc comment on the preceding line.
 
+   5.9. Method and function comments
 
+      Parameter and return types MUST be documented. The "this" type
+      should be documented when necessary. Method, parameter and return
+      descriptions (but not types) MAY be omitted if they are obvious
+      from the rest of the method's JSDoc or from it's signature.
+      Method descriptions SHOULD start with a sentence written in the
+      third person declarative voice (a.k.a. the summary).
+
+      If a method overrides a superclass method, it must include an
+      @override annotation. Overridden methods must include all @param
+      and @return annotations if any types are refined, but SHOULD emit
+      them if the types are all the same.
+
+      Anonymous functions do not require JSDoc, though parameters may
+      be specified inline if the automatic type inference is
+      insufficient.
+
+   5.10. Property comments
+
+      Property types must be documented. The description may be omitted
+      for private properties, if name and type provide enough
+      documentation for understanding the code.
+
+      Publicly exported constants are commented the same way as
+      properties. Explicit types may be omitted for @const properties
+      initialized from an expression with an obviously known type.
+
+   5.11. Nullability
+
+      When defining the type of a parameter or other element,
+      nullability SHOULD be indicated by either "!" or "?" as a prefix
+      of the type for non-null and nullable, respectively. Primitive
+      types are nullable by default but cannot be immediately
+      distinguished from a name that is typed to a non-null-by-default
+      type. As such, all types except primitives and record literals
+      SHOULD be annotated explicitly with either "?" or "!" to indicate
+      whether they are nullable or not.
+
+   5.12. Template parameter types
+
+      Whenever possible, one SHOULD specify template parameters when
+      dealing with elements which by default contain other elements,
+      such as Objects, Arrays or a Promise.
+
+      Objects MUST NOT specify template parameters when used as a
+      hierarchy instead of a map-like structure.
+
+   6. Policies
+
+      6.1. Unspecified styling
+
+         For any style question that isn't settled definitively by this
+         specification, one SHOULD follow the code style of the rest of
+         the file. If that doesn't resolve the question, consider
+         emulating the other files in the same package. If that still
+         does not resolve the question, follow the rules set by
+         standardjs.
+
+         As a rule of thumb: be consistent throughout the package.
+
+      6.2. Deprecation
+
+         Mark deprecated methods, classes, inferfaces or functions with
+         @deprecated annotations. A deprecation comment MUST include
+         simple, clear directions for people to fix their call sites.
+
+      6.3. Code not in TrackThis Style
+
+         You will occasionally encounter files in your codebase that
+         are not in proper TrackThis Style. These may have come from an
+         acquisition, or may have been written before TrackThis Style
+         took a position on some issue, or may be in non-TrackThis
+         Style for any other reason.
+
+         6.3.1. Reformatting existing code
+
+            When working on the file, only reformat the functions
+            and/or methods you change instead of the whole file. If
+            significant changes are being made to a file, it is
+            expected that the file will be in TrackThis Style.
+
+         6.3.2. Newly added code
+
+            Brand new files MUST use TrackThis style, regardless of
+            style choices of other files in the same package. When
+            adding new code to a file that is not in TrackThis Style,
+            reformatting the existing code first is recommended,
+            subject ti the advice in section 8.3.1.
+
+            If this reformatting is not done, the new code should be as
+            consistent as possible with existing code in the same file,
+            but MUST not break any rules of this specification.
+
+      6.4. Local style rules
+
+         Teams and projects may adopt additional style rules beyond
+         those in this document, but must accept that cleanup changes
+         may not abide by these additional rules, and must not block
+         such cleanup changes due to violating any additional rules.
+         Beware of excessive rules which serve no purpose. The style
+         guide does not seek to define style in every possible scenario
+         and neither should you.
 
 N. Informative resources
 
