@@ -101,12 +101,12 @@ Table of contents
    4. Naming ........................................................ 9
       4.1. Rules for all identifiers ................................ 9
       4.2. Rules by identifier type ................................. 9
-
-
-
-
-
-
+   5. JSDoc ......................................................... 9
+      5.1. General form ............................................. 9
+      5.2. Summary .................................................. 9
+      5.3. Description .............................................. 9
+      5.4. Tags .....................................................
+   6. Markdown .....................................................
 
 
 
@@ -506,35 +506,35 @@ SPEC 0001                Javascript Styling                 August 2018
       Local variable names ............................. lowerCamelCase
       Template parameter names .......................... CONSTANT_CASE
 
+5. JSDoc
 
+   5.1. General form
 
+      JSDoc is a generic docblock (/**) with a body as defined here.
+      JSDoc is either multi-line or single-line, where the single-line
+      version MUST follow the parameter or field section of the
+      multi-line version.
 
+      There are many tools which extract metadata from JSDoc comments
+      to perform code validation and optimization. As such, these
+      comments MUST be well-formed.
 
+      A JSDoc comment can contain the following sections, which are
+      described in 5.2. through 5.4.:
+        - Summary
+        - Description
+        - Tags
 
+   5.2. Summary
 
+      The summary is a one-line string used to give an impression of
+      the function of the documented element. This can be used in
+      overviews to allow the user to skim the documentation in search
+      of the required template.
 
+   5.3. Description
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      The description
 
 
 Bron                                                           [Page 9]
