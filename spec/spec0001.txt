@@ -4,6 +4,8 @@ Specification: 0001                                          Robin Bron
 
 
                          Javascript Styling
+Bron                                                          [Page 11]
+SPEC 0001                Javascript Styling                 August 2018
 
 Copyright Notice
 
@@ -62,63 +64,56 @@ SPEC 0001                Javascript Styling                 August 2018
 
 Table of contents
 
-   1. Introduction .................................................. 3
-      1.1. Conventions .............................................. 3
-   2. Source file basics ............................................ 3
-      2.1. File name ................................................ 3
-      2.2. File encoding ............................................ 3
-      2.3. Special characters ....................................... 3
-         2.3.1. Whitespace characters ............................... 3
-         2.3.2. Special escape sequences ............................ 3
-         2.3.3. Non-ASCII characters ................................ 3
-   3. Formatting .................................................... 4
-      3.1. Braces ................................................... 4
-         3.1.1. Control structures .................................. 4
-         3.1.2. Non-empty blocks .................................... 4
-         3.1.3. Empty blocks ........................................ 4
-      3.2. Indentation .............................................. 4
-      3.3. String literals .......................................... 4
-      3.4. Number literals .......................................... 5
-      3.5. Array literals ........................................... 5
-      3.6. Object literals .......................................... 5
-      3.7. Functions ................................................ 6
-         3.7.1. Function literals ................................... 6
-         3.7.2. Arrow function literals ............................. 6
-         3.7.3. Generator functions ................................. 6
-         3.7.4. Parameters .......................................... 6
-            3.7.4.1. Default parameters ............................. 6
-            3.7.4.2. Rest parameters ................................ 7
-         3.7.5. Returns ............................................. 7
-         3.7.6. Spread operator ..................................... 7
-      3.8. Classes .................................................. 7
-         3.8.1. Constructors ........................................ 7
-         3.8.2. Fields .............................................. 7
-         3.8.3. ES5 class declarations .............................. 7
-         3.8.4. Prototype manipulation .............................. 8
-         3.8.5. Getters and setters ................................. 8
-      3.9. This ..................................................... 8
-      3.10. Disallowed features ..................................... 8
-   4. Naming ........................................................ 9
-      4.1. Rules for all identifiers ................................ 9
-      4.2. Rules by identifier type ................................. 9
-   5. JSDoc ......................................................... 9
-      5.1. General form ............................................. 9
-      5.2. Summary .................................................. 9
-      5.3. Description .............................................. 9
-      5.4. Tags .....................................................
-   6. Markdown .....................................................
-
-
-
-
-
-
-
-
-
-
-Bron                                                           [Page 2]
-SPEC 0001                Javascript Styling                 August 2018
+   1. Introduction
+      1.1. Conventions
+   2. Source file basics
+      2.1. File name
+      2.2. File encoding
+      2.3. Special characters
+         2.3.1. Whitespace characters
+         2.3.2. Special escape sequences
+         2.3.3. Non-ASCII characters
+   3. Formatting
+      3.1. Braces
+         3.1.1. Control structures
+         3.1.2. Non-empty blocks
+         3.1.3. Empty blocks
+      3.2. Indentation
+      3.3. String literals
+      3.4. Number literals
+      3.5. Array literals
+      3.6. Object literals
+      3.7. Functions
+         3.7.1. Function literals
+         3.7.2. Arrow function literals
+         3.7.3. Generator functions
+         3.7.4. Parameters
+            3.7.4.1. Default parameters
+            3.7.4.2. Rest parameters
+         3.7.5. Returns
+         3.7.6. Spread operator
+      3.8. Classes
+         3.8.1. Constructors
+         3.8.2. Fields
+         3.8.3. ES5 class declarations
+         3.8.4. Prototype manipulation
+         3.8.5. Getters and setters
+      3.9. This
+      3.10. Disallowed features
+   4. Naming
+      4.1. Rules for all identifiers
+      4.2. Rules by identifier type
+   5. JSDoc
+      5.1. General form
+      5.2. Summary
+      5.3. Description
+      5.4. Tags
+         5.4.1. JSDoc tag reference
+      5.5. Line wrapping
+      5.6. Top/file-level comments
+      5.7. Class comments
+      5.8. Enum and typedef comments
+      5.9. Method and function comments
 
 1. Introduction
 
@@ -177,9 +172,6 @@ SPEC 0001                Javascript Styling                 August 2018
          used, depending only on which makes the code easier to read
          and understand.
 
-Bron                                                           [Page 3]
-SPEC 0001                Javascript Styling                 August 2018
-
 3. Formatting
 
    3.1. Braces
@@ -234,11 +226,6 @@ SPEC 0001                Javascript Styling                 August 2018
       multiple lines in which case they SHOULD adhere the indent level
       of the enclosing block if the whitespace does not affect
       functionality or complicates the code.
-
-
-
-Bron                                                           [Page 4]
-SPEC 0001                Javascript Styling                 August 2018
 
    3.4. Number literals
 
@@ -297,9 +284,6 @@ SPEC 0001                Javascript Styling                 August 2018
       shorthand in place of a colon immediately followed by a function
       or arrow function literal to be consistent with class literals.
 
-Bron                                                           [Page 5]
-SPEC 0001                Javascript Styling                 August 2018
-
    3.7. Functions
 
       3.7.1. Function literals
@@ -356,10 +340,6 @@ SPEC 0001                Javascript Styling                 August 2018
             than a small handful of optional parameters that do not
             have a natural order.
 
-
-Bron                                                           [Page 6]
-SPEC 0001                Javascript Styling                 August 2018
-
          3.7.4.2. Rest parameters
 
             Use a rest parameter instead of accessing the special
@@ -412,13 +392,6 @@ SPEC 0001                Javascript Styling                 August 2018
          after the call to the super class constructor, if a super
          class exists. Methods SHOULD be defined on the prototype of
          the constructor.
-
-
-
-
-
-Bron                                                           [Page 7]
-SPEC 0001                Javascript Styling                 August 2018
 
       3.8.4. Prototype manipulation
 
@@ -476,10 +449,6 @@ SPEC 0001                Javascript Styling                 August 2018
          as functions for coercing (which is preferred over using "+"
          or concatenating the empty string) or creating Symbols.
 
-
-Bron                                                           [Page 8]
-SPEC 0001                Javascript Styling                 August 2018
-
 4. Naming
 
    4.1. Rules for all identifiers
@@ -534,11 +503,106 @@ SPEC 0001                Javascript Styling                 August 2018
 
    5.3. Description
 
-      The description
+      The description contains concise information about the function
+      of the documented element. The description MUST be in Markdown
+      markup to apply styling.
+
+      The following list has examples of types of information that can
+      be contained in a description:
+        - Explanation of algorithms
+        - Code examples
+        - Array specification
+        - Relation to other elements
+        - License information (in the case of file documentation)
+
+      Descriptions can also contain inline tags. These are special
+      annotations that can be substituted for a specialized type of
+      information (such as {@link}). Inline tags MUST always be
+      surrounded by braces.
+
+   5.4. Tags
+
+      Tags represent metadata with which IDEs, external tooling or even
+      the application itself know how to interpret an element.
+
+      5.4.1. JSDoc tag reference
+
+         The following tags are common and well supported by various
+         documentation generation tools (such as JsDossier) for purely
+         documentation purposes.
+
+         Tag       Description
+
+         @author   Document the author of a file or the owner of a
+         @owner    test, generally only used in the @fileoverview
+                   comment. Not recommended.
+
+         @bug      Indicates what bugs the given test function
+                   regression tests. Multiple bugs should each have
+                   their own @bug line, to make searching for
+                   regression tests as easy as possible.
+
+         @see      Reference a lookup to another class function or
+                   method, global function, file or URL.
+
+         @param    Indicates the type of a function or method
+                   parameter, optionally adding a description to
+                   further explain what the described parameter does.
+
+         @return   Indicates the return type of a function or method,
+                   optionally adding a description to further explain
+                   what the return value contains.
+
+         @type     Indicate the documented element's type.
+
+         @const    Describes the documented element is a constant
+                   variable, that it MUST NOT be reassigned later.
+
+         @private  Describes the documented element is private and care
+                   MUST be taken to not expose the element to scopes
+                   other than the one it is declared in.
+
+         @this     Indicates the documented element uses the "this"
+                   keyword and SHOULD be handled with care in relation
+                   to it's context.
+
+   5.5. Line wrapping
+
+      Line-wrapped block texts MUST be indented four spaces or be
+      aligned with the start of the text when it's a comment on a tag.
+
+      Wrapped description text SHOULD be lined up with the description
+      on previous lines.
+
+   5.6. Top/file-level comments
+
+      A file MAY have a top-level overview. A copyright notice and
+      author information are optional. File overviews are recommended
+      whenever a file consists of more than a single class definition.
+      The top level comment is designed to orient readers unfamiliar
+      with the code to what is in this file. If present, it MAY provide
+      a description of the file's contents and any dependencies or
+      compatibility information. Line wrapping MUST follow the rules
+      defined in section 5.5.
+
+   5.7. Class comments
+
+      Classes, interfaces and records MUST be documented with a
+      description and any template parameters, implemented interfaces
+      and other appropriate tags. The class description SHOULD provide
+      the reader with enough information to know how and when to use
+      the class, as wel as any additional considerations necessary to
+      correctly use the class. Textual descriptions MAY be omitted on
+      the constructor.
 
 
-Bron                                                           [Page 9]
-SPEC 0001                Javascript Styling                 August 2018
+
+   5.8. Enum and typedef comments
+
+      Enums and typedefs MUST be documented. Public enums and typedefs
+      MUST have a non-empty description. Individual enum items may be
+      documented with a JSDoc comment on the preceding line.
+
 
 
 N. Informative resources
@@ -563,42 +627,6 @@ N. Informative resources
    [RFC3629]     UTF-8
                  F. Yergeau
                  https://tools.ietf.org/html/rfc3629
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Bron                                                          [Page 10]
-SPEC 0000               Specification format                August 2018
 
 N. Author information
 
