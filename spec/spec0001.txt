@@ -123,7 +123,7 @@ SPEC 0001                Javascript Styling                 August 2018
    6. Policies ..................................................... 14
       6.1. Unspecified styling ..................................... 14
       6.2. Deprecation ............................................. 14
-      6.3. Code not in TrackThis style ............................. 14
+      6.3. Code not in Ratus Style ................................. 14
          6.3.1. Reformatting existing code ......................... 15
          6.3.2. Newly added code ................................... 15
       6.4. Local style rules ....................................... 15
@@ -184,9 +184,8 @@ SPEC 0001                Javascript Styling                 August 2018
 
    This document serves as the complete definition of the coding
    standards for source code in the JavaScript programming language as
-   followed by TrackThis. A JavaScript source file is described as
-   being "in TrackThis style" if, and only if, it adheres to the rules
-   herein.
+   followed by Ratus. A JavaScript source file is described as being in
+   "Ratus Style" if, and only if, it adheres to the rules herein.
 
    Like other programming style guides, the issues covered span not
    only aesthetic issues of formatting, but other types of conventions
@@ -236,6 +235,7 @@ SPEC 0001                Javascript Styling                 August 2018
          Unicode character or the equivalent hex or Unicode escape is
          used, depending only on which makes the code easier to read
          and understand.
+
 
 Bron                                                           [Page 4]
 SPEC 0001                Javascript Styling                 August 2018
@@ -828,13 +828,13 @@ SPEC 0001                Javascript Styling                 August 2018
       @deprecated annotations. A deprecation comment MUST include
       simple, clear directions for people to fix their call sites.
 
-   6.3. Code not in TrackThis Style
+   6.3. Code not in Ratus Style
 
       You will occasionally encounter files in your codebase that are
-      not in proper TrackThis Style. These may have come from an
-      acquisition, or may have been written before TrackThis Style took
-      a position on some issue, or may be in non-TrackThis Style for
-      any other reason.
+      not in proper Ratus Style. These may have come from an
+      acquisition, or may have been written before Ratus Style took a
+      position on some issue, or may be in non-Ratus Style for any
+      other reason.
 
 
 Bron                                                          [Page 14]
@@ -845,15 +845,15 @@ SPEC 0001                Javascript Styling                 August 2018
          When working on the file, only reformat the functions and/or
          methods you change instead of the whole file. If significant
          changes are being made to a file, it is expected that the file
-         will be in TrackThis Style.
+         will be in Ratus Style.
 
       6.3.2. Newly added code
 
-         Brand new files MUST use TrackThis style, regardless of style
+         Brand new files MUST use Ratus style, regardless of style
          choices of other files in the same package. When adding new
-         code to a file that is not in TrackThis Style, reformatting
-         the existing code first is recommended, subject to the advice
-         in section 8.3.1.
+         code to a file that is not in Ratus Style, reformatting the
+         existing code first is recommended, subject to the advice in
+         section 8.3.1.
 
          If this reformatting is not done, the new code should be as
          consistent as possible with existing code in the same file,
@@ -872,8 +872,8 @@ SPEC 0001                Javascript Styling                 August 2018
    6.5. Generated code
 
       Source code generate by any build process is not required to be
-      in TrackThis Style. However, any generated identifiers that will
-      by referenced from hand-written code must follow the naming
+      in Ratus Style. However, any generated identifiers that will by
+      referenced from hand-written code must follow the naming
       requirements. As a special exception, such identifiers are
       allowed to contain underscores, which may help to avoid conflicts
       with hand-written identifiers.
