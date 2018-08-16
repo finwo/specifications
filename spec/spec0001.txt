@@ -667,8 +667,6 @@ Table of contents
       Objects MUST NOT specify template parameters when used as a
       hierarchy instead of a map-like structure.
 
-// TODO: fix paragraph width
-
 6. Policies
 
    6.1. Unspecified styling
@@ -676,9 +674,8 @@ Table of contents
       For any style question that isn't settled definitively by this
       specification, one SHOULD follow the code style of the rest of
       the file. If that doesn't resolve the question, consider
-      emulating the other files in the same package. If that still
-      does not resolve the question, follow the rules set by
-      standardjs.
+      emulating the other files in the same package. If that still does
+      not resolve the question, follow the rules set by standardjs.
 
       As a rule of thumb: be consistent throughout the package.
 
@@ -690,26 +687,26 @@ Table of contents
 
    6.3. Code not in TrackThis Style
 
-      You will occasionally encounter files in your codebase that
-      are not in proper TrackThis Style. These may have come from an
-      acquisition, or may have been written before TrackThis Style
-      took a position on some issue, or may be in non-TrackThis
-      Style for any other reason.
+      You will occasionally encounter files in your codebase that are
+      not in proper TrackThis Style. These may have come from an
+      acquisition, or may have been written before TrackThis Style took
+      a position on some issue, or may be in non-TrackThis Style for
+      any other reason.
 
       6.3.1. Reformatting existing code
 
-         When working on the file, only reformat the functions
-         and/or methods you change instead of the whole file. If
-         significant changes are being made to a file, it is
-         expected that the file will be in TrackThis Style.
+         When working on the file, only reformat the functions and/or
+         methods you change instead of the whole file. If significant
+         changes are being made to a file, it is expected that the file
+         will be in TrackThis Style.
 
       6.3.2. Newly added code
 
-         Brand new files MUST use TrackThis style, regardless of
-         style choices of other files in the same package. When
-         adding new code to a file that is not in TrackThis Style,
-         reformatting the existing code first is recommended,
-         subject ti the advice in section 8.3.1.
+         Brand new files MUST use TrackThis style, regardless of style
+         choices of other files in the same package. When adding new
+         code to a file that is not in TrackThis Style, reformatting
+         the existing code first is recommended, subject to the advice
+         in section 8.3.1.
 
          If this reformatting is not done, the new code should be as
          consistent as possible with existing code in the same file,
@@ -717,13 +714,13 @@ Table of contents
 
    6.4. Local style rules
 
-      Teams and projects may adopt additional style rules beyond
-      those in this document, but must accept that cleanup changes
-      may not abide by these additional rules, and must not block
-      such cleanup changes due to violating any additional rules.
-      Beware of excessive rules which serve no purpose. The style
-      guide does not seek to define style in every possible scenario
-      and neither should you.
+      Teams and projects may adopt additional style rules beyond those
+      in this document, but must accept that cleanup changes may not
+      abide by these additional rules, and must not block such cleanup
+      changes due to violating any additional rules. Beware of
+      excessive rules which serve no purpose. The style guide does not
+      seek to define style in every possible scenario and neither
+      should you.
 
 N. Informative resources
 
