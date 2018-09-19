@@ -1,0 +1,82 @@
+\documentclass[a4paper,12pt]{article}
+\pagenumbering{arabic}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{xparse}
+
+\NewDocumentCommand{\codeword}{v}{%
+\texttt{\textcolor{blue}{#1}}%
+}
+
+\lstset{language=C,keywordstyle={\bfseries \color{blue}}}
+
+\begin{document}
+
+\title{Ratus Unilicense 1.0}
+\author{Robin Bron}
+\date{\today}
+\maketitle
+
+\vfill
+\input{copyright.tex}
+\newpage
+\tableofcontents
+\newpage
+
+
+\section{Introduction}
+  This document specifies the Ratus Unilicense 1.0 license.
+
+\subsection{Conventions}
+\input{rfc2119.tex}
+
+\newpage
+\section{The License}
+
+\subsection{Inside a file}
+  Ratus Unilicense 1.0 MAY be applied to a single file or document using the
+  following text near the start of the file or document, replacing \{name\} by
+  the name of the entity holding the rights (most likely your or your company's
+  name).
+
+  \begin{quote}
+    Copyright (C) \{name\} - All Rights Reserved
+    Ratus Unilicense 1.0
+
+    Unauthorized copying, modifying or distribution of this document and
+    associated documentation documents, via any medium, is strictly prohibited
+    without the express permission of \{name\}.
+
+    The full extend of Ratus Unilicense 1.0 can be found using the following
+    url: https://trackthis.nl/license/ratus-unilicense-1.0
+  \end{quote}
+
+\subsection{Full Version}
+  Ratus Unilicense 1.0 SHOULD be applied to a collection of files or documents
+  using a single \codeword{LICENSE} file or document in the folder or container
+  which holds the files or documents licensed byt it.
+
+  To apply Ratus Unilicense 1.0 to the contents of a folder or container, the
+  contents of the \codeword{LICENSE} file or document MUST be as follows,
+  replacing \{name\} by the name of the entity holding the rights (most likely
+  your or your company's name).
+
+  \begin{quote}
+    Copyright (C) \{name\} - All Rights Reserved
+    Ratus Unilicense 1.0
+
+    Unauthorized copying, modifying or distribution of the files and/or
+    documents contained in the folder or container holding this license and
+    associated files and/or documents (the "Software"), is strictly prohibited
+    without the express permission of \{name\}.
+
+    Copies or derivatives of the files and/or documents contained in the folder
+    or container holding this license
+    % TODO: same, newer or relicense by copyright holder
+  \end{quote}
+
+
+%\subsection{Full Version}
+
+\end{document}
