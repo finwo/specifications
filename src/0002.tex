@@ -1,7 +1,9 @@
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,11pt]{article}
 \pagenumbering{arabic}
+\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{listings}
+\usepackage{lmodern}
 \usepackage{xcolor}
 \usepackage{xparse}
 
@@ -19,14 +21,41 @@
 \maketitle
 
 \vfill
-\input{copyright.tex}
+
+\input{cc40.tex}
 \newpage
 \tableofcontents
 \newpage
 
-
 \section{Introduction}
-  This document specifies the Ratus Unilicense 1.0 license.
+  This document specifies the Ratus Unilicense 1.0 license, targeted at
+  providing a restrictive code license for both open source and closed source
+  projects while still allowing unrestricted use of the licensed subject.
+
+\subsection{Summary}
+  \begin{itemize}
+    \item Must
+    \begin{itemize}
+      \item Include License
+    \end{itemize}
+    \item Can
+    \begin{itemize}
+      \item Change license
+      \item Sublicense
+      \item Private use
+      \item Commercial use
+      \item Include Original
+    \end{itemize}
+    \item Limited
+    \begin{itemize}
+      \item Distribute
+      \item Modify
+    \end{itemize}
+    \item Can't
+    \begin{itemize}
+      \item Hold Liable
+    \end{itemize}
+  \end{itemize}
 
 \subsection{Conventions}
 \input{rfc2119.tex}
@@ -84,14 +113,19 @@
     Obtained copies of the Software may be compiled and/or executed without
     modification without limitations and warranties.
 
-    % Allow relicensing by copyright holder
-    3. Relicensing\newline
+    % Allow full relicensing by copyright holder
+    3. Changing license\newline
     The Software may be distributed under a different license only by the
-    copyright holder at which point only the newer license applies to copies of
-    the Software obtained using that license.
+    copyright holder at which point only the newer license applies to all
+    copies of the Software obtained using that license.
+
+    % Allow example code to be copied
+    4. Sublicense\newline
+    A different license may apply to any, whole or partial, file, document,
+    folder or container covered by this license.
 
     % Waive warranties
-    4. Liability\newline
+    5. Liability\newline
     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
     IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF FITNESS FOR A
     PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL AUTHORS OR
