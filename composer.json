@@ -1,7 +1,8 @@
 {
     "name": "ratus/specifications",
     "require": {
-        "finwo/property-accessor": "^0.1.4"
+        "finwo/property-accessor": "^0.1.4",
+        "erusev/parsedown": "^1.7"
     },
     "license": "CC-By 4.0",
     "authors": [
