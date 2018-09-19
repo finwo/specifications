@@ -15,5 +15,6 @@ their own requirements.
 
 ### Table of contents
 
-- [SPEC0000](spec/spec0000.txt) Specification Format
-- [SPEC0001](spec/spec0001.txt) Javascript Styling
+- [SPEC0000](spec/0000.txt) Specification Format
+- [SPEC0001](spec/0001.txt) Javascript Styling
+- [SPEC0002](spec/0002.pdf) Ratus Unilicense
