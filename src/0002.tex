@@ -1,0 +1,142 @@
+\documentclass[a4paper,11pt]{article}
+\pagenumbering{arabic}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{xparse}
+
+\NewDocumentCommand{\codeword}{v}{%
+\texttt{\textcolor{blue}{#1}}%
+}
+
+\lstset{language=C,keywordstyle={\bfseries \color{blue}}}
+
+\begin{document}
+
+\title{Ratus Unilicense 1.0}
+\author{Robin Bron}
+\date{\today}
+\maketitle
+
+\vfill
+
+\input{cc40.tex}
+\newpage
+\tableofcontents
+\newpage
+
+\section{Introduction}
+  This document specifies the Ratus Unilicense 1.0 license, targeted at
+  providing a restrictive code license for both open source and closed source
+  projects while still allowing unrestricted use of the licensed subject.
+
+\subsection{Summary}
+  \begin{itemize}
+    \item Must
+    \begin{itemize}
+      \item Include License
+    \end{itemize}
+    \item Can
+    \begin{itemize}
+      \item Change license
+      \item Sublicense
+      \item Private use
+      \item Commercial use
+      \item Include original
+    \end{itemize}
+    \item Limited
+    \begin{itemize}
+      \item Distribute
+      \item Modify
+    \end{itemize}
+    \item Can't
+    \begin{itemize}
+      \item Hold Liable
+    \end{itemize}
+  \end{itemize}
+
+\subsection{Conventions}
+\input{rfc2119.tex}
+
+\newpage
+\section{The License}
+
+\subsection{Inside a file}
+  Ratus Unilicense 1.0 MAY be applied to a single file or document using the
+  following text near the start of the file or document, replacing \{name\} by
+  the name of the entity holding the rights (most likely your or your company's
+  name).
+
+  \begin{quote}
+    Copyright (C) \{name\} - All Rights Reserved\newline
+    Ratus Unilicense 1.0
+
+    % Disallow spreading like wildfire
+    Unauthorized copying, modifying or distribution of this file or document,
+    it's derivatives and associated documentation files and/or documents, via
+    any medium, is strictly prohibited without the express permission of the
+    copyright holder.
+
+    % Apply all rules from the full version
+    All but section 1 of Ratus Unilicense 1.0 apply to this file or
+    document (the "Software"), as found following the url:
+    https://trackthis.nl/license/ratus-unilicense-1.0
+  \end{quote}
+
+\newpage
+\subsection{Full Version}
+  Ratus Unilicense 1.0 SHOULD be applied to a collection of files or documents
+  using a single \codeword{LICENSE} file or document in the folder or container
+  which holds the files or documents licensed by it.
+
+  To apply Ratus Unilicense 1.0 to the contents of a folder or container, the
+  contents of the \codeword{LICENSE} file or document MUST be as follows,
+  replacing \{name\} by the name of the entity holding the rights (most likely
+  your or your company's name).
+
+  \begin{quote}
+    Copyright (C) \{name\} - All Rights Reserved\newline
+    Ratus Unilicense 1.0
+
+    % Disallow spreading like wildfire
+    1. Copyright\newline
+    Unauthorized copying, modifying or distribution of the files and/or
+    documents contained in the folder or container holding this license,
+    their derivatives and associated files and/or documents (the "Software"),
+    via any medium, is strictly prohibited without the express permission of
+    the copyright holder.
+
+    % Allow compile & run
+    2. Compilation and execution\newline
+    Obtained copies of the Software may be compiled and/or executed without
+    modification without limitations and warranties.
+
+    % Allow full relicensing by copyright holder
+    3. Changing license\newline
+    The Software may be distributed under a different license only by the
+    copyright holder at which point only the newer license applies to all
+    copies of the Software obtained using that license.
+
+    % Allow example code to be copied
+    4. Sublicense\newline
+    The copyright holder may apply a different license to any, whole or
+    partial, file, document, folder or container covered by this license.
+
+    % Waive warranties
+    5. Liability\newline
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF FITNESS FOR A
+    PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL AUTHORS OR
+    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+    WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
+    OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+
+  \end{quote}
+
+
+%\subsection{Full Version}
+
+\end{document}
