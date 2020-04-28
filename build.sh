@@ -15,7 +15,7 @@
 
 echo "(Re)building generated specs"
 ORGDIR=$(pwd)
-SPECDIR=$(pwd)/spec
+SPECDIR=$(pwd)/docs/spec
 cd src
 for f in $(find . -type f -regextype posix-egrep -regex '\./[0-9]{4}.*\.tex'); do
   pdflatex ${f}
