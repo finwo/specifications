@@ -13,16 +13,31 @@
 #echo "Updating PHP dependencies"
 #composer install &>/dev/null
 
-echo "(Re)building generated specs"
+echo "Building..."
 ORGDIR=$(pwd)
 SPECDIR=$(pwd)/docs/spec
+
 cd src
-for f in $(find . -type f -regextype posix-egrep -regex '\./[0-9]{4}.*\.tex'); do
-  pdflatex ${f}
-  pdflatex ${f}
-  cp ${f%.*}.pdf ${SPECDIR}
-  rm -f *.pdf
-  rm -f *.aux
-  rm -f *.log
-  rm -f *.toc
+for filename in $(find . -type f -regextype posix-egrep -regex '\./[0-9]{4}.*\.(tex|txt)'); do
+  echo $f
+  case "${filename##*.}" in
+    tex)
+      pdflatex ${filename}
+      pdflatex ${filename}
+      cp ${filename%.*}.pdf ${SPECDIR}
+      rm -f *.pdf
+      rm -f *.aux
+      rm -f *.log
+      rm -f *.toc
+      ;;
+    txt) # Font: Courier
+# 10pt font
+# 12pt line height
+# 60 lines per page
+# 72 characters per line
+# 8 spaces per tab
+# Based on A4 paper
+      text2pdf -fCourier -s10 -v12 -l60 -c72 -t8 -A4 ${filename} > ${SPECDIR}/${filename%.*}.pdf
+      ;;
+  esac
 done
