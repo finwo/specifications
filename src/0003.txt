@@ -1,0 +1,420 @@
+Specification: 0003                                                   Robin Bron
+                                                                       June 2020
+
+Obsoletes: 0000
+
+
+                              Specification Format
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright Notice
+
+   This document is licensed under a
+   Creative Commons Attribution 4.0 International License
+
+   You should have received a copy of the license along with this work. If not,
+   see <http://creativecommons.org/licenses/by/4.0/>
+
+Bron                                                                    [Page 1]
+SPEC 0003                    Specification Format                      June 2020
+
+Table of contents
+
+    1. Conventions ........................................................... 3
+    2. Character encoding .................................................... 3
+    3. Line definition ....................................................... 3
+       3.1 Line numbering .................................................... 3
+    4. Pages ................................................................. 3
+       4.1 Page header ....................................................... 3
+       4.2 Page footer ....................................................... 3
+    5. Paragraphs ............................................................ 3
+    6. Document header ....................................................... 4
+       6.1. Descriptive header ............................................... 4
+       6.2. Short author identification ...................................... 4
+       6.3. Publish date ..................................................... 4
+    7. Document footer ....................................................... 5
+    8. Section titles ........................................................ 5
+    9. Document title ........................................................ 5
+   10. Informative resources ................................................. 6
+   11. Author information .................................................... 7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bron                                                                    [Page 2]
+SPEC 0003                    Specification Format                      June 2020
+
+1. Conventions
+
+   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
+   "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this
+   document are to be interpreted as described in RFC2119 when, and only when,
+   they appear in all capitals, as shown here.
+
+2. Character Encoding
+
+   Plain-text files for specifications MUST use the UTF-8 standard.
+
+3. Line definition
+
+   A line of text is a sequence of 0 or more characters followed by a line feed
+   character. For the sake of and clarity, the ending line feed character is not
+   part of the line.
+
+   Lines MUST NOT exceed 80 characters in length, excluding the ending line feed
+   character. A line is called a blank line if it consists of 0 characters.
+
+3.1. Line numbering
+
+   Assuming a document is in digital format[1] and has a length of greater than
+   0 bytes, the first character in the document is part of line 1.
+
+4. Pages
+
+   A page is a sequence of 60 lines. That means for every line number n, the
+   line is the start of a new page when n mod 60 = 1.
+
+4.1 Page header
+
+   The first line of a page SHOULD consist of a left-aligned spec number
+   indicator, a centered (short) document title and a right-aligned short
+   publishing date (see 6.3). Line 2 of a page MUST always be blank, excluding
+   the first page of the document.
+
+4.2 Page footer
+
+   The last line of a page MUST consist of a left-align last name of the
+   author or authors and a right-aligned page number between square brackets.
+   The second-to-last line of a page must be blank, just like line 2 of a page.
+
+5. Paragraphs
+
+   A paragraph is a sequence of consecutive lines all of a length greater than 0
+   characters. Paragraphs are separated by either one or more blank lines or a
+   page break. Paragraphs MUST NOT span multiple pages, limiting their size to
+   56 lines.
+
+
+
+
+
+
+
+
+Bron                                                                    [Page 3]
+SPEC 0003                    Specification Format                      June 2020
+
+6. Document header
+
+   The first lines of the first page of a specification document MUST always
+   contain left-aligned description headers (see 6.1) and right-aligned author
+   identification and a right-aligned publishing date.
+
+   After the initial lines (see 6.1 through 6.3), references to other
+   specifications MUST be included when the specification obsoletes or updates
+   the references specification.
+
+   After the initial lines and the references, the document title is REQUIRED to
+   be written on the first page of the document. For it's specification, see
+   section 9.
+
+   The bottom of the first page of the document MUST include a copyright notice
+   and/or license, a link to the license or the inclusion text required by the
+   license in question.
+
+6.1. Descriptive header
+
+   Each descriptive header is made up of a key and a value. Whitespace is not
+   allowed in both the key and the value. Whitespace can only be included in the
+   value by wrapping the value in quote characters.
+
+   The key of the header consists of all characters of the line up to the first
+   semicolon, excluding the semicolon itself and omitting all white-space
+   characters.
+
+   The value of the header starts at the first non-whitespace character after
+   the first semicolon of the line. If the first character is a quote, the value
+   ends at the next quote in the line. If the first character is not a quote,
+   the value ends at the next whitespace character.
+
+6.2. Short author identification
+
+   In order to allow the author or authors to take some credit and to track who
+   has written what, the author's name MUST be added right-aligned on the first
+   line of the first page of the document. To prevent mixing notations between
+   documents, the names SHOULD be written as only the first letters of all given
+   names in capitals, separated by dots, a space and the Family name starting
+   with an uppercase character. When written by a group with a name, the short
+   author identification string SHOULD state the group's name instead of the
+   individual authors.
+
+6.3. Publish date
+
+   Dates contained in specification documents following the format described in
+   this document MUST follow the Gregorian calendar.
+
+   The publish date of the document MUST include a month starting with a capital
+   character and fully written year. The day of the month MAY be added on the
+   first page of the document, but MUST NOT be included in the short date on all
+   pages.
+
+
+
+
+Bron                                                                    [Page 4]
+SPEC 0003                    Specification Format                      June 2020
+
+7. Document footer
+
+   The document SHOULD close, starting on a new page, with all informative
+   resources which were used to write the document, noting their keyword and
+   document title. A URI to the resource SHOULD be included.
+
+   After the informative resources, the document SHOULD end with one or several
+   pages dedicated to the information of the author or authors.
+
+8. Section titles
+
+   Section titles SHOULD be a short text about the subject the section
+   describes. Whether it is simply the keyword of what it explains, a problem
+   statement or other type of text is up to the author as long as it's relevant
+   to the section's body and fits within a single line.
+
+   A section title MUST start with a capital character & MUST NOT contain any
+   other capital letters, excluding where they are required in names or
+   abbreviations.
+
+9. Document title
+
+   The title of the document should clearly state the main subject of the
+   document and it's contents. Each word of the document title MUST start with a
+   capital character when noted as the title of the document.
+
+   On the first page of the document, the title should be centered horizontally
+   and have at least 2 blank lines both above and below it. The document title
+   SHOULD be as close to the document's descriptive headers as possible.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bron                                                                    [Page 5]
+SPEC 0003                    Specification Format                      June 2020
+
+10. Informative resources
+
+   [RFC2119]  RFC Key Words
+              S. Bradner
+              https://tools.ietf.org/html/rfc2119
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bron                                                                    [Page 6]
+SPEC 0003                    Specification Format                      June 2020
+
+11. Author information
+
+   Name ....... Robin Bron
+   Nickname ... Finwo
+   EMail ...... robin@finwo.nl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bron                                                                    [Page 7]
