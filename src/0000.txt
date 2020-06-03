@@ -2,10 +2,10 @@ Specification: 0000                                          Robin Bron
                                                              Ratus B.V.
                                                             August 2018
 
+Obsoleted by: 0003
+
 
                         Specification Format
-
-
 
 
 
