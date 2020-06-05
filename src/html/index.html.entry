@@ -1,6 +1,7 @@
                 <tr href="spec/{{identifier}}.pdf">
                     <td>{{identifier}}</td>
-                    <td>{{identifier}}</td>
+                    <td>{{title}}</td>
+                    <td>{{publication-date}}</td>
                     <td href='#q={{obsoleted-by}}'>{{obsoleted-by}}</td>
                     <td href="license/{{license}}.txt">{{license}}</td>
                 </tr>
