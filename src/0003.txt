@@ -1,7 +1,5 @@
 Specification: 0003                                                      R. Bron
-                                                                       June 2020
-
-Obsoletes: 0000
+Obsoletes: 0000                                                        June 2020
 
 
                            Specification Style Guide
@@ -11,6 +9,8 @@ Abstract
    This document describes the fundamental and unique style conventions and
    editorial policies currently in use for the Specification Series.  It offers
    guidance regarding the style and structure of a Specification.
+
+
 
 
 
