@@ -51,6 +51,7 @@
                 <tr>
                     <th>SPEC</th>
                     <th>Title</th>
+                    <th>Published</th>
                     <th>Obsoleted by</th>
                     <th>License</th>
                 </tr>
