@@ -1,5 +1,6 @@
 \documentclass[a4paper,11pt]{article}
 \pagenumbering{arabic}
+\usepackage{datetime}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{listings}
@@ -13,11 +14,13 @@
 
 \lstset{language=C,keywordstyle={\bfseries \color{blue}}}
 
+\newdate{publishDate}{19}{09}{2018}
+
 \begin{document}
 
 \title{Ratus Unilicense 1.0}
 \author{Robin Bron}
-\date{\today}
+\date{\displaydate{publishDate}}
 \maketitle
 
 \vfill
