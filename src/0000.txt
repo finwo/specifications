@@ -1,10 +1,10 @@
 Specification: 0000                                                   Robin Bron
-                                                                     August 2018
-
-Obsoleted by: 0003
+Obsoleted by: 0003                                                   August 2018
 
 
                               Specification Format
+
+
 
 
 
