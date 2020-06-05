@@ -1,4 +1,4 @@
-Specification: 0000                                                      R. Bron
+Specification: 0003                                                      R. Bron
                                                                        June 2020
 
 Obsoletes: 0000
@@ -6,48 +6,48 @@ Obsoletes: 0000
 
                            Specification Style Guide
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Abstract
 
    This document describes the fundamental and unique style conventions and
    editorial policies currently in use for the Specification Series.  It offers
    guidance regarding the style and structure of a Specification.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Copyright Notice
 
@@ -58,82 +58,94 @@ Copyright Notice
    see <http://creativecommons.org/licenses/by/4.0/>
 
 Bron                                                                    [Page 1]
-SPEC 0003                   Specification Style Guide                  June 2020
+SD0003                    Specification Style Guide                    June 2020
 
 Table of Contents
 
-1. Introduction
-2. Key Words
-   2.1. MUST
-   2.2. MUST NOT
-   2.3. SHOULD
-   2.4. SHOULD NOT
-   2.5. MAY
-   2.6. Guidance in the use of these Imperatives
-   2.7. Security Considerations
-3. Specification Syle Conventions
-   3.1. Language
-   3.2. Punctuation
-   3.3. DNS Names and URIs
-   3.4. Capitalization
-   3.5. Citations
-   3.6. Abbreviation Rules
-4. Structure of a Specification
-   4.1. First-Page header
-      4.1.1. Author/Editor
-      4.1.2. Organization
-      4.1.3. Updates and Obsoletes
-   4.2. Full Title
-   4.3. Abstract Section
-   4.4. Table of Contents Section
-   4.5. Body of the Specification
-      4.5.1. Introduction Section
-      4.5.2. Requirements Language Section
-      4.5.3. Internationalization Considerations Section
-      4.5.4. Security Considerations Section
-      4.5.5. References Section
-         4.5.5.1. URIs in Specifications
-         4.5.5.2. Referencing Specifications
-         4.5.5.3. Referencing Other Standards Development Organizations
-   4.6. Appendices Section
-   4.7. Acknowledgements Section
-   4.8. Contributors Section
-   4.9. Author's Information Section
-5. Security Considerations
-6. References
-   6.1. Normative References
-   6.2. Informative References
+   1. Introduction ........................................................... 3
+   2. Key Words .............................................................. 3
+      2.1. MUST .............................................................. 3
+      2.2. MUST NOT .......................................................... 3
+      2.3. SHOULD ............................................................ 3
+      2.4. SHOULD NOT ........................................................ 3
+      2.5. MAY ............................................................... 4
+      2.6. Guidance in the use of these Imperatives .......................... 4
+      2.7. Security Considerations ........................................... 4
+   3. Specification Syle Conventions ......................................... 5
+      3.1. Language .......................................................... 5
+      3.2. Punctuation ....................................................... 5
+      3.3. DNS Names and URIs ................................................ 5
+      3.4. Capitalization .................................................... 5
+      3.5. Citations ......................................................... 6
+      3.6. Abbreviation Rules ................................................ 6
+   4. Structure of a Specification Document .................................. 7
+      4.1. First-Page header ................................................. 7
+         4.1.1. Author/Editor ................................................ 8
+         4.1.2. Organization ................................................. 8
+         4.1.3. Updates and Obsoletes ........................................ 8
+      4.2. Full Title ........................................................ 9
+      4.3. Abstract Section .................................................. 9
+      4.4. Table of Contents Section ......................................... 9
+      4.5. Body of the Document .............................................. 9
+         4.5.1. Introduction Section ........................................ 10
+         4.5.2. Requirements Language Section ............................... 10
+         4.5.3. Internationalization Considerations Section ................. 10
+         4.5.4. Security Considerations Section ............................. 10
+         4.5.5. References Section .......................................... 11
+            4.5.5.1. URIs in Specification Documents ........................ 11
+            4.5.5.2. Referencing Specification Documents .................... 12
+            4.5.5.3. Referencing Other Standards Development Organizations .. 13
+      4.6. Acknowledgements Section ......................................... 13
+      4.7. Contributors Section ............................................. 13
+      4.8. Author Information Section ....................................... 14
+   5. Security Considerations ............................................... 14
+   6. Normative References .................................................. 15
+   Acknowledgements ......................................................... 15
+   Author Information ....................................................... 15
 
----
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bron                                                                    [Page 2]
+SD0003                    Specification Style Guide                    June 2020
 
 1. Introduction
 
    The ultimate goal of the Specification publication process is to produce
    documents that are readable, clear, consistent, and reasonably uniform.  The
-   basic formatting conventions for Specifications were established in August
-   2018.  This document describes the fundamental and unique style conventions
-   and editorial policies currently in use for the Specification Series.  It is
+   basic formatting conventions for Specification Documents were established in
+   August 2018 [SD0000].  This document describes the fundamental and unique
+   style conventions and editorial policies for Specification Documents.  It is
    intended as a stable, infrequently updated reference for authors, editors,
    and reviewers.
 
    The world of technical publishing has generally accepted rules for grammar,
    punctuation, capitalization, sentence length and complexity, parallelism,
-   etc.
-
-   All Specifications begin as Drafts, and a well-written and properly
-   constructed Draft provides a strong basis for a good Specification.
+   etc. These generally accepted rules are to be followed within Specification
+   Documents.
 
 2. Key Words
 
    In many standards track documents several words are used to signify the
-   requirements in the specification.  These words are often capitalized. This
-   document defines these words as they should be interpreted in Specification
+   requirements in the specification.  These words are often capitalized.  This
+   section defines these words as they should be interpreted in Specification
    Documents.  Authors who follow these guidelines should incorporate this
    phrase near the beginning of their document:
 
       The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
       "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
-      document are to be interpreted as described in SPEC0003.
+      document are to be interpreted as described in SD0003.
 
    Note that the force of these words is modified by the requirement level of
    the document in which they are used.
@@ -162,6 +174,11 @@ Table of Contents
    acceptable or even useful, but the full implications should be understood
    and the case carefully weighed before implementing any behavior described
    with this label.
+
+
+
+Bron                                                                    [Page 3]
+SD0003                    Specification Style Guide                    June 2020
 
 2.5. MAY
 
@@ -195,6 +212,34 @@ Table of Contents
    as most implementors will not have had the benefit of the experience and
    discussions that produced the specification.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bron                                                                    [Page 4]
+SD0003                    Specification Style Guide                    June 2020
+
 3. Specification Style Conventions
 
    This Style Guide does not use the terminology as defined in section 2.
@@ -223,8 +268,8 @@ Table of Contents
 
        Search for the string "Error Found".
 
-    When quoting general text, such as general text from another Specification,
-    punctuation may be included within the quotation marks.
+    When quoting general text, such as general text from another Specification
+    Document, punctuation may be included within the quotation marks.
 
     Quotation marks are not necessary when text is formatted as a block
     quotation.
@@ -238,18 +283,22 @@ Table of Contents
 3.4. Capitalization
 
    - Capitalizationn must be consistent within the document and ideally should
-     be consistent with related specifications.  Refer to the online table of
-     decisions on consistent usage of terms in Specifications.
+     be consistent with related Specification Documents.
 
-   - Per CMOS guidelines, the major words in Specification titles and section
-     titles should be capitalized (this is sometimes called "title cases").
-     Typically, all words in a title will be capitalized, except for internal
-     articles, prepositions, and conjunctions.
+   - Per CMOS guidelines, the major words in document titles and section titles
+     should be capitalized (this is sometimes called "title cases"). Typically,
+     all words in a title will be capitalized, except for internal articles,
+     prepositions, and conjunctions.
 
    - Section titles that are in sentence form will follow typical sentence
      capitalization.
 
    - Titles of figures may be in sentence form or use title case.
+
+
+
+Bron                                                                    [Page 5]
+SD0003                    Specification Style Guide                    June 2020
 
 3.5. Citations
 
@@ -260,11 +309,11 @@ Table of Contents
 
    - A citation/reference tag must not contain spaces.
 
-        Example: "[SPEC0003]" rather than "[SPEC 0003]"
+        Example: "[SD0003]" rather than "[SD 0003]"
 
      However, the proper textual naming of a Specification contains a space.
 
-        Example: "See SPEC 0003 for more information."
+        Example: "See SD 0003 for more information."
 
    - Cross-references within the body of the document and to other documents
      must use section numbers rather than page numbers, as pagination may change
@@ -275,25 +324,56 @@ Table of Contents
    Abbreviations should be expanded in document titles and upon first use in the
    document.  The full expansion of the text should be followed by the
    abbreviation itself in parenthesis.  The exception is an abbreviation that is
-   so common that the readership of Specifications can be expected to recognize
-   it immediately; examples include (but are not limited to) TCP, IP, SNMP, and
-   HTTP.  Some cases are marginal, and the author should make the final
-   judgement, weighing obscurity agains complexity.
+   so common that the readership of Specification Documents can be expected to
+   recognize it immediately; examples include (but are not limited to) TCP, IP,
+   SNMP, and HTTP.  Some cases are marginal, and the author should make the
+   final judgement, weighing obscurity agains complexity.
 
-4. Structure of a Specification
 
-   A published Specification will largely contain the elements in the following
-   list.  Some of these sections are required, as noted.  Sections are allowed
-   to contain nothing but subsections.  The rules for each of these elements are
-   described in more details below.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bron                                                                    [Page 6]
+SD0003                    Specification Style Guide                    June 2020
+
+4. Structure of a Specification Document
+
+   A published Specification Document will largely contain the elements in the
+   following list.  Some of these sections are required, as noted.  Sections are
+   allowed to contain nothing but subsections.  The rules for each of these
+   elements are described in more details below.
 
       First-page header                        [Required]
       Title                                    [Required]
       Abstract                                 [Required]
       Copyright Notice                         [Required]
       Table of Contents                        [Required]
-      Body of the Memo                         [Required]
-        1. Introductionn                       [Required]
+      Body of the Document                     [Required]
+        1. Introduction                        [Required]
         2. Requirements Language
         3. ...
            MAIN BODY OF THE TEXT
@@ -305,13 +385,13 @@ Table of Contents
         9.2. Informative References
       Acknowledgements
       Contributors
-      Author's Information                     [Required]
+      Author Information                     [Required]
 
    Within the body of the document, the order shown above is strongly
    recommended.  Exceptions may be questioned.  Outside the body of the
    document, the order above is required.  The section numbers above are for
    illustrative purposes; they are not intended to correspond to required
-   numbering in a Specification.
+   numbering in a Specification Document.
 
 4.1. First-Page header
 
@@ -319,10 +399,31 @@ Table of Contents
    Boilerplates" [RFC5741] and it's successors.  In addition, the following
    conventions will apply.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bron                                                                    [Page 7]
+SD0003                    Specification Style Guide                    June 2020
+
 4.1.1. Author/Editor
 
    The determination of who should be listed as an author or editor on a
-   Specification is made by the stream.
+   Specification Document is made by the stream.
 
    The author's name (initial followed by family name) appears on the first line
    of the heading.  Some variation, such as additional initials or
@@ -358,9 +459,9 @@ Table of Contents
 
 4.1.3. Updates and Obsoletes
 
-   When a Specification obsoletes or updates a previously published
-   Specification or Specifications, this information is included in the document
-   header.  For example:
+   When a Specification Document obsoletes or updates a previously published
+   Specification Document or Specification Documents, this information is
+   included in the document header.  For example:
 
       "Updates: nnnn" or "Updates: nnnn, ..., nnnn"
 
@@ -369,14 +470,24 @@ Table of Contents
    If the document updates or obsoletes more than one document, numbers will be
    listed in ascending order.
 
+
+
+
+
+
+
+
+Bron                                                                    [Page 8]
+SD0003                    Specification Style Guide                    June 2020
+
 4.2. Full Title
 
    The title must be centered below the rest of the heading, preceded by two
    blank lines and followed by one blank line.
 
-   Choosing a good title for a Specification can be a challenge. A good title
-   should fairly represent the scope and purpose of the document without being
-   either too general or too specific and lengthy.
+   Choosing a good title for a Specification Document can be a challenge. A good
+   title should fairly represent the scope and purpose of the document without
+   being either too general or too specific and lengthy.
 
    Abbreviations in a title must generally be expanded when first encountered
    (See section 3.6 for additional guidance on abbreviations).
@@ -389,10 +500,10 @@ Table of Contents
 
 4.3. Abstract Section
 
-   Every Specificationn must have an Abstract that provides a concise and
-   comprehensive overview of the purpose and contents of the entire document, to
-   give a technically knowledgeable reader a general overview of the function of
-   the document.
+   Every Specification Document must have an Abstract that provides a concise
+   and comprehensive overview of the purpose and contents of the entire
+   document, to give a technically knowledgeable reader a general overview of
+   the function of the document.
 
    Composing a useful Abstract generally requires thought and care. Usually, an
    Abstract should begin with a phrase like "This memo ..." or "This document
@@ -402,7 +513,7 @@ Table of Contents
    copying and pasting the first few paragraphs of the Introduction is allowed,
    but it may result in an Abstract that is both incomplete and redundant.  Note
    also that an Abstract is not a subsitute for an Introduction; the
-   Specification should be self-contained as if there were no Abstract.
+   Specification Document should be self-contained as if there were no Abstract.
 
    Similarly, the Abstract should be complete in itself.  It will appear is
    isolation in publication announcements.  Therefore, the Abstract must not
@@ -410,21 +521,24 @@ Table of Contents
 
 4.4. Table of Contents Section
 
-   A Table of Contents (TOC) is required in all Specifications. It must be
-   positioned after the Copyright Notice and before the Introduction.
+   A Table of Contents (TOC) is required in all Specification Documents. It must
+   be positioned after the Copyright Notice and before the Introduction.
 
-4.5. Body of the Specification
+4.5. Body of the Document
 
    Following the TOC is the body of the document.
 
-   Each Specification must include an Introduction section that (among other
-   things) explains the motivation for the Specification and (if appropriate)
-   describes the applicability of the document, e.g., whether it specifies a
-   protocol, provides a discussion of some problem, is simply of interest to the
-   Internet community, or provides a status report on some activity.  Thebody of
-   the document and the Abstract must be self-contained and separable.  This may
-   result in some duplication of text between the Abstract and the Introduction;
-   this is acceptable.
+   Each Specification Document must include an Introduction section that (among
+   other things) explains the motivation for the Specification and (if
+   appropriate) describes the applicability of the document, e.g., whether it
+   specifies a protocol, provides a discussion of some problem, is simply of
+   interest to the Internet community, or provides a status report on some
+   activity.  The body of the document and the Abstract must be self-contained
+   and separable.  This may result in some duplication of text between the
+   Abstract and the Introduction; this is acceptable.
+
+Bron                                                                    [Page 9]
+SD0003                    Specification Style Guide                    June 2020
 
 4.5.1. Introduction Section
 
@@ -433,17 +547,354 @@ Table of Contents
    titles such as "Overview" or "Background".  These alternates are acceptable.
 
 4.5.2. Requirements Language Section
-      4.5.3. Internationalization Considerations Section
-      4.5.4. Security Considerations Section
-      4.5.5. References Section
-         4.5.5.1. URIs in Specifications
-         4.5.5.2. Referencing Specifications
-         4.5.5.3. Referencing Other Standards Development Organizations
-   4.6. Appendices Section
-   4.7. Acknowledgements Section
-   4.8. Contributors Section
-   4.9. Author's Information Section
+
+   Some document use certain capitalized words ("MUST", "SHOULD", etc.) to
+   specify precise requirement levels for technical features.  Section 2 of this
+   document defines a default interpretation of these capitalized words in
+   Specification Documents.  If this interpretation is used, this document must
+   be citet and included as a normative reference.  Otherwise, the correct
+   interpretation must be specified in the document.
+
+   This section must appear as a part of the body of the memo (as defined by
+   this document).  It must appear as part of, or subsequent to, the
+   Introduction section.
+
+   These words are considered part of the technical content of the document and
+   are intended to provide guidance to implementers about specific technical
+   features, generally governed by considerations of interopretability.
+
+4.5.3. Internationalization Considerations Section
+
+   All documents that deal with internationalization issues should have a
+   section describing those issues.
+
+4.5.4. Security Considerations Section
+
+   All Specification Documents must contain a section that discusses the
+   security considerations relevant to the specification.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bron                                                                   [Page 10]
+SD0003                    Specification Style Guide                    June 2020
+
+4.5.5. References Section
+
+   The reference list is solely for recording reference entries. Introductory
+   text is not allowed.
+
+   The Specification Style allows the use of any of a variety of reference
+   styles, as long as they are used consistently within a document.  However,
+   where necessary, some reference styles have been described for use within the
+   Series.  See the examples in this document.
+
+   Reference lists must indicate whether each reference is normative or
+   informative, where normative references are essential to implementing or
+   understanding content of the Specification Document and informative
+   references provide additional information.  When both normative and
+   informative references exist, the references section should be split into two
+   subsection:
+
+      s. References
+
+      s.1. Normative References
+
+         xxx
+         ...
+         xxx
+
+      s.2. Informative References
+
+         xxx
+         ...
+         xxx
+
+   References will generally appear in alphanumeric order by citation tag.
+   Where there are only normative or informative references, no subsection is
+   required; the top-level section should say "Normative References" or
+   "Informative References".
+
+4.5.5.1. URIs in Specification Documents
+
+   The use of URIs in references is acceptable, as long as the URI is the most
+   stable (i.e., unlikely to change and expected to be continuously available)
+   and direct reference possible. The URI will be verified as valid during the
+   Specification Document editorial process.
+
+   If a dates URI (one that includes a timestamp for the page) is available for
+   a referenced web page, its use is required.
+
+   Note that URIs may not be the sole information provided for a reference
+   entry.
+
+
+
+
+
+
+
+
+
+Bron                                                                   [Page 11]
+SD0003                    Specification Style Guide                    June 2020
+
+4.5.5.2. Referencing Specification Documents
+
+   The following format is required for referencing Specification Documents.
+   Note the ordering for multiple authors: the format of the name of the last
+   author listed is different than that of all previous authors in the list.
+
+   For one author or editor:
+
+      [SDXXXX] Last name, First initial., Ed. (if applicable),
+               "Specification Title", Sub-series number (if applicable),
+               Specification number, Date of publication,
+               <https://finwo.github.io/specification/spec/#.pdf>
+
+   Example:
+
+      [SD0003] Bron, R.,
+               "Specification Style Guide"
+               SD 0003, June 2020
+               <https://finwo.github.io/specifications/spec/0003.pdf>
+
+   For two authors or editors:
+
+      [SDXXXX] Last name, First initial., Ed. (if applicable)
+               and First initial. Last name, Ed. (if applicable),
+               "Specification Title", Sub-series number (if applicable)
+               Specification number, Date of publication
+               <https://finwo.github.io/specification/spec/#.pdf>
+
+   For three or more authors or editors:
+
+      [SDXXXX] Last name, First initial., Ed. (if applicable),
+               Last name, First initial., Ed. (if applicable),
+               and First initial. Last name, Ed. (if applicable),
+               "Specification Title", Sub-series number (if applicable)
+               Specification number, Date of publication
+               <https://finwo.github.io/specification/spec/#.pdf>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bron                                                                   [Page 12]
+SD0003                    Specification Style Guide                    June 2020
+
+4.5.5.3. Referencing Other Standards Development Organizations (SDOs)
+
+   The following format is suggested when referencing a document or standard
+   from another SDO in which authors are listed:
+
+      [SYMBOLIC-TAG]
+         Last name, First initial. and First initial. Last name, "Document
+         Title", Document reference number, Date of publication, <URI if
+         available>.
+
+      [W3C.REC-xml11]
+              Bray, T., Paoli, J., Sperberg-McQueen, C., Maler, E., Yergeau, F.,
+              and J.  Cowan, "Extensible Markup Language (XML) 1.1 (Second
+              Edition)", W3C Recommendation REC-xml11-20060816, August 2006,
+              <http://www.w3.org/TR/2006/REC-xml11-20060816>.
+
+   Note that the order of authors in the list is the same as order shown on the
+   actual document and that the common, abbreviated form of SDO is used.
+
+   Alternatively, when no list of authors is available, the following format is
+   recommended:
+
+      [SYMBOLIC-TAG]  Organization, "Document Title", Document reference number,
+                      Date of publication, <URI if available>.
+
+   Example:
+
+      [IEEE802.1Q]  IEEE, "Local and Metropolitan Area Networks -- Media Access
+                    Control (MAC) Bridges and Virtual Bridged Local Area
+                    Networks", IEEE Std 802.1Q-2011, August 2011,
+                    <http://standards.ieee.org/findstds/standard/
+                    802.1Q-2011.html>.
+
+4.6. Acknowledgements Section
+
+   THis optional section may be used instead of, or in addition to, a
+   Contributors section.  It is often used by authors to publicly thank those
+   who have probided feedback regarding a document and to note any documents
+   from which text was borrowed.
+
+4.7. Contributors Section
+
+   This optional section acknowledges those who have made significant
+   contributions to the document.
+
+   In a similar fashion to the Author Information section, the determination
+   of who should be listed as a contributor is made by the stream.
+
+   The Contributors section may include brief statements about the nature of
+   particular contributions ("Sam contributed Section 3"), and it may also
+   include affiliations of listed contributors.  At the descretionnn of the
+   author(s), contact addresses may also be included in the Contributors
+   section, for those contributors whose knowledge makes them useful for future
+   contacts for information about the Specification Document.  The format of any
+   contact information should be similar to the format of information in the
+   Author Information section.
+
+Bron                                                                   [Page 13]
+SD0003                    Specification Style Guide                    June 2020
+
+4.8. Author Information Section
+
+   This required section gives contact information for the author(s) listed in
+   the first-page header.
+
+   Contact information must include a long-lived email address and optionally
+   may include a postal address, telephone number, and/or Public PGP key.  If
+   the postal address is included, it should include the country name, using the
+   English short name listed by the ISO 3166 Maintenance Agency [ISO_OBP].  The
+   purpose of this section is to (1) unambiguously define author identity (e.g.,
+   the John Smith who works for FooBar Systems) and (2) provide contact
+   information for future readers who have questions and comments.
+
+   The practive of munged email addresses (i.e., altering an email address to
+   make it less readable to bots and web crawlers to avoid spam) is not
+   appropriate in an archival document series. Author contact information is
+   provided so that the readers can easily contact the author with questions
+   and/or comments. Address munging is not allowed in Specification Documents.
+
 5. Security Considerations
-6. References
-   6.1. Normative References
-   6.2. Informative References
+
+   This document has no security considerations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bron                                                                   [Page 14]
+SD0003                    Specification Style Guide                    June 2020
+
+6. Informative References
+
+   [SD0000]   Bron, R., "Specification Format", SD 0000, August 2018
+              <https://finwo.github.io/specification/spec/0000.pdf>
+
+   [RFC5741]  Daigle, L., Ed., Kolkman, O., Ed., and IAB, "RFC Streams,
+              Headers, and Boilerplates", RFC 5741, December 2009,
+              <http://www.rfc-editor.org/info/rfc5741>.
+
+   [ISO_OBP]  ISO, "Online Browsing Platform (OBP)",
+              <https://www.iso.org/obp/ui/>.
+
+Acknowledgements
+
+   This document relies heavily on RFC 7322 [RFC7322]; as such, I am grateful to
+   the authors of those documents for putting their time and effort into the RFC
+   Series.
+
+Author Information
+
+   R. Bron
+   EMail: robin@finwo.nl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bron                                                                   [Page 15]

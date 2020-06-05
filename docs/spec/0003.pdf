@@ -1,0 +1,1292 @@
+%PDF-1.1
+1 0 obj
+<<
+/CreationDate (D:20200605114128)
+/Producer (text2pdf v1.1 (\251 Phil Smith, 1996))
+/Title (./0003.txt)
+>>
+endobj
+2 0 obj
+<<
+/Type /Catalog
+/Pages 3 0 R
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Courier
+>>
+endobj
+5 0 obj
+<<
+  /Font << /F1 4 0 R >>
+  /ProcSet [ /PDF /Text ]
+>>
+endobj
+6 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 7 0 R
+>>
+endobj
+7 0 obj
+<<
+/Length 8 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 802 Tm
+12 TL
+(Specification: 0003                                                      R. Bron)'
+(                                                                       June 2020)'
+()'
+(Obsoletes: 0000)'
+()'
+()'
+(                           Specification Style Guide)'
+()'
+(Abstract)'
+()'
+(   This document describes the fundamental and unique style conventions and)'
+(   editorial policies currently in use for the Specification Series.  It offers)'
+(   guidance regarding the style and structure of a Specification.)'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+(Copyright Notice)'
+()'
+(   This document is licensed under a)'
+(   Creative Commons Attribution 4.0 International License)'
+()'
+(   You should have received a copy of the license along with this work.  If not,)'
+(   see <http://creativecommons.org/licenses/by/4.0/>)'
+()'
+(Bron                                                                    [Page 1])'
+ET
+endstream
+endobj
+8 0 obj
+1055
+endobj
+9 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 10 0 R
+>>
+endobj
+10 0 obj
+<<
+/Length 11 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 802 Tm
+12 TL
+(SD0003                    Specification Style Guide                    June 2020)'
+()'
+(Table of Contents)'
+()'
+(   1. Introduction ........................................................... 3)'
+(   2. Key Words .............................................................. 3)'
+(      2.1. MUST .............................................................. 3)'
+(      2.2. MUST NOT .......................................................... 3)'
+(      2.3. SHOULD ............................................................ 3)'
+(      2.4. SHOULD NOT ........................................................ 3)'
+(      2.5. MAY ............................................................... 4)'
+(      2.6. Guidance in the use of these Imperatives .......................... 4)'
+(      2.7. Security Considerations ........................................... 4)'
+(   3. Specification Syle Conventions ......................................... 5)'
+(      3.1. Language .......................................................... 5)'
+(      3.2. Punctuation ....................................................... 5)'
+(      3.3. DNS Names and URIs ................................................ 5)'
+(      3.4. Capitalization .................................................... 5)'
+(      3.5. Citations ......................................................... 6)'
+(      3.6. Abbreviation Rules ................................................ 6)'
+(   4. Structure of a Specification Document .................................. 7)'
+(      4.1. First-Page header ................................................. 7)'
+(         4.1.1. Author/Editor ................................................ 8)'
+(         4.1.2. Organization ................................................. 8)'
+(         4.1.3. Updates and Obsoletes ........................................ 8)'
+(      4.2. Full Title ........................................................ 9)'
+(      4.3. Abstract Section .................................................. 9)'
+(      4.4. Table of Contents Section ......................................... 9)'
+(      4.5. Body of the Document .............................................. 9)'
+(         4.5.1. Introduction Section ........................................ 10)'
+(         4.5.2. Requirements Language Section ............................... 10)'
+(         4.5.3. Internationalization Considerations Section ................. 10)'
+(         4.5.4. Security Considerations Section ............................. 10)'
+(         4.5.5. References Section .......................................... 11)'
+(            4.5.5.1. URIs in Specification Documents ........................ 11)'
+(            4.5.5.2. Referencing Specification Documents .................... 12)'
+(            4.5.5.3. Referencing Other Standards Development Organizations .. 13)'
+(      4.6. Acknowledgements Section ......................................... 13)'
+(      4.7. Contributors Section ............................................. 13)'
+(      4.8. Author Information Section ....................................... 14)'
+(   5. Security Considerations ............................................... 14)'
+(   6. Normative References .................................................. 15)'
+(   Acknowledgements ......................................................... 15)'
+(   Author Information ....................................................... 15)'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+(Bron                                                                    [Page 2])'
+ET
+endstream
+endobj
+11 0 obj
+3657
+endobj
+12 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 13 0 R
+>>
+endobj
+13 0 obj
+<<
+/Length 14 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 802 Tm
+12 TL
+(SD0003                    Specification Style Guide                    June 2020)'
+()'
+(1. Introduction)'
+()'
+(   The ultimate goal of the Specification publication process is to produce)'
+(   documents that are readable, clear, consistent, and reasonably uniform.  The)'
+(   basic formatting conventions for Specification Documents were established in)'
+(   August 2018 [SD0000].  This document describes the fundamental and unique)'
+(   style conventions and editorial policies for Specification Documents.  It is)'
+(   intended as a stable, infrequently updated reference for authors, editors,)'
+(   and reviewers.)'
+()'
+(   The world of technical publishing has generally accepted rules for grammar,)'
+(   punctuation, capitalization, sentence length and complexity, parallelism,)'
+(   etc. These generally accepted rules are to be followed within Specification)'
+(   Documents.)'
+()'
+(2. Key Words)'
+()'
+(   In many standards track documents several words are used to signify the)'
+(   requirements in the specification.  These words are often capitalized.  This)'
+(   section defines these words as they should be interpreted in Specification)'
+(   Documents.  Authors who follow these guidelines should incorporate this)'
+(   phrase near the beginning of their document:)'
+()'
+(      The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",)'
+(      "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this)'
+(      document are to be interpreted as described in SD0003.)'
+()'
+(   Note that the force of these words is modified by the requirement level of)'
+(   the document in which they are used.)'
+()'
+(2.1. MUST)'
+()'
+(   This word, or the terms "REQUIRED" and "SHALL", mean that the definition is)'
+(   an absolute requirement of the specification.)'
+()'
+(2.2. MUST NOT)'
+()'
+(   This phrase, or the phrase "SHALL NOT", mean that the definition is an)'
+(   absolute prohibition of the specification.)'
+()'
+(2.3. SHOULD)'
+()'
+(   This word, or the adjective "RECOMMENDED", mean that there may exist valid)'
+(   reasons in particular circumstances to ignore a particular item, but the full)'
+(   implications must be understood and carefully weighed before choosing a)'
+(   different course.)'
+()'
+(2.4. SHOULD NOT)'
+()'
+(   This phrase, or the phrase "NOT RECOMMENDED" mean that there may exist)'
+(   valid reasons in particular circumstances when the particular behavior is)'
+(   acceptable or even useful, but the full implications should be understood)'
+(   and the case carefully weighed before implementing any behavior described)'
+(   with this label.)'
+()'
+()'
+()'
+(Bron                                                                    [Page 3])'
+ET
+endstream
+endobj
+14 0 obj
+2731
+endobj
+15 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 16 0 R
+>>
+endobj
+16 0 obj
+<<
+/Length 17 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 802 Tm
+12 TL
+(SD0003                    Specification Style Guide                    June 2020)'
+()'
+(2.5. MAY)'
+()'
+(   This word, or the adjective "OPTIONAL", mean that an item is truly)'
+(   optional.  One vendor may choose to include the item because a particular)'
+(   marketplace requires it or because the vendor feels that it enhances the)'
+(   product while another vendor may omit the same item.  An implementation)'
+(   which does not include a particular option MUST be prepared to interoperate)'
+(   with another implementationn which does include the option, though perhaps)'
+(   with reduced functionality.  In the same vein an implementation which does)'
+(   include a particular option MUST be prepared to interoperate with another)'
+(   implementation which does not include the option \(except, of course, for the)'
+(   feature the option provides\).)'
+()'
+(2.6. Guidance in the use of these Imperatives)'
+()'
+(   Imperatives of the type defined in this section must be used with care and)'
+(   sparingly.  In particular, they MUST only be used where it is actually)'
+(   required for interoperation or to limit behavior which has potential for)'
+(   causing harm \(e.g., limiting retransmissions\).  For example, they must not)'
+(   be used to try to impose a particular method on implementors where the)'
+(   method is not required for interoperability.)'
+()'
+(2.7. Security Considerations)'
+()'
+(   These terms are frequently used to specify behavior with security)'
+(   implications.  The effects on security of not implementing a MUST or SHOULD,)'
+(   or doing something the specification says MUST NOT or SHOULD NOT be done)'
+(   may be very subtle.  Document authors should take the time to elaborate the)'
+(   security implementations of not following recommendations or requirements)'
+(   as most implementors will not have had the benefit of the experience and)'
+(   discussions that produced the specification.)'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+(Bron                                                                    [Page 4])'
+ET
+endstream
+endobj
+17 0 obj
+2158
+endobj
+18 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 19 0 R
+>>
+endobj
+19 0 obj
+<<
+/Length 20 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 802 Tm
+12 TL
+(SD0003                    Specification Style Guide                    June 2020)'
+()'
+(3. Specification Style Conventions)'
+()'
+(   This Style Guide does not use the terminology as defined in section 2.)'
+()'
+(3.1. Language)'
+()'
+(   The Specification publication language is English.  Spelling may be either)'
+(   American or British, as long as an individual document is internally)'
+(   consistent.  Where both American and British English spelling are used within)'
+(   a document or cluster of documents, the text will have to be modified to be)'
+(   consistent with American English spelling.)'
+()'
+(3.2. Punctuation)'
+()'
+(   - No overstriking \(or underlining\) is allowed.)'
+()'
+(   - When a sentence ended by a period is immediately followed by another)'
+(     sentence, there must be two blank spaces after the period.)'
+()'
+(  - A comma is used before the last item of a series, e.g.,)'
+()'
+(       "TCP service is reliable, ordered, and full duplex")'
+()'
+(  - When quoting literal text, punctuation is placed outside quotation marks,)'
+(    e.g.,)'
+()'
+(       Search for the string "Error Found".)'
+()'
+(    When quoting general text, such as general text from another Specification)'
+(    Document, punctuation may be included within the quotation marks.)'
+()'
+(    Quotation marks are not necessary when text is formatted as a block)'
+(    quotation.)'
+()'
+(3.3. DNS Names and URIs)'
+()'
+(   Angle brackets are strongly recommended around URIs, e.g.,)'
+()'
+(      <http://example.org/>)'
+()'
+(3.4. Capitalization)'
+()'
+(   - Capitalizationn must be consistent within the document and ideally should)'
+(     be consistent with related Specification Documents.)'
+()'
+(   - Per CMOS guidelines, the major words in document titles and section titles)'
+(     should be capitalized \(this is sometimes called "title cases"\). Typically,)'
+(     all words in a title will be capitalized, except for internal articles,)'
+(     prepositions, and conjunctions.)'
+()'
+(   - Section titles that are in sentence form will follow typical sentence)'
+(     capitalization.)'
+()'
+(   - Titles of figures may be in sentence form or use title case.)'
+()'
+()'
+()'
+(Bron                                                                    [Page 5])'
+ET
+endstream
+endobj
+20 0 obj
+2287
+endobj
+21 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 22 0 R
+>>
+endobj
+22 0 obj
+<<
+/Length 23 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 802 Tm
+12 TL
+(SD0003                    Specification Style Guide                    June 2020)'
+()'
+(3.5. Citations)'
+()'
+(   - References and citations must match.  That is, there must be a reference)'
+(     for each citation used. and vice versa.)'
+()'
+(   - Citations must be enclosed in square brackets \(e.g., "[CITE1]"\).)'
+()'
+(   - A citation/reference tag must not contain spaces.)'
+()'
+(        Example: "[SD0003]" rather than "[SD 0003]")'
+()'
+(     However, the proper textual naming of a Specification contains a space.)'
+()'
+(        Example: "See SD 0003 for more information.")'
+()'
+(   - Cross-references within the body of the document and to other documents)'
+(     must use section numbers rather than page numbers, as pagination may change)'
+(     per format and device.)'
+()'
+(3.6. Abbreviation Rules)'
+()'
+(   Abbreviations should be expanded in document titles and upon first use in the)'
+(   document.  The full expansion of the text should be followed by the)'
+(   abbreviation itself in parenthesis.  The exception is an abbreviation that is)'
+(   so common that the readership of Specification Documents can be expected to)'
+(   recognize it immediately; examples include \(but are not limited to\) TCP, IP,)'
+(   SNMP, and HTTP.  Some cases are marginal, and the author should make the)'
+(   final judgement, weighing obscurity agains complexity.)'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+(Bron                                                                    [Page 6])'
+ET
+endstream
+endobj
+23 0 obj
+1606
+endobj
+24 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 25 0 R
+>>
+endobj
+25 0 obj
+<<
+/Length 26 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 802 Tm
+12 TL
+(SD0003                    Specification Style Guide                    June 2020)'
+()'
+(4. Structure of a Specification Document)'
+()'
+(   A published Specification Document will largely contain the elements in the)'
+(   following list.  Some of these sections are required, as noted.  Sections are)'
+(   allowed to contain nothing but subsections.  The rules for each of these)'
+(   elements are described in more details below.)'
+()'
+(      First-page header                        [Required])'
+(      Title                                    [Required])'
+(      Abstract                                 [Required])'
+(      Copyright Notice                         [Required])'
+(      Table of Contents                        [Required])'
+(      Body of the Document                     [Required])'
+(        1. Introduction                        [Required])'
+(        2. Requirements Language)'
+(        3. ...)'
+(           MAIN BODY OF THE TEXT)'
+(        6. ...)'
+(        7. Internationalization Considerations)'
+(        8. Security Considerations             [Required])'
+(        9. References)'
+(        9.1. Normative References)'
+(        9.2. Informative References)'
+(      Acknowledgements)'
+(      Contributors)'
+(      Author Information                     [Required])'
+()'
+(   Within the body of the document, the order shown above is strongly)'
+(   recommended.  Exceptions may be questioned.  Outside the body of the)'
+(   document, the order above is required.  The section numbers above are for)'
+(   illustrative purposes; they are not intended to correspond to required)'
+(   numbering in a Specification Document.)'
+()'
+(4.1. First-Page header)'
+()'
+(   Headers will follow the format described in "RFC Streams, Headers, and)'
+(   Boilerplates" [RFC5741] and it's successors.  In addition, the following)'
+(   conventions will apply.)'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+(Bron                                                                    [Page 7])'
+ET
+endstream
+endobj
+26 0 obj
+2065
+endobj
+27 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 28 0 R
+>>
+endobj
+28 0 obj
+<<
+/Length 29 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 802 Tm
+12 TL
+(SD0003                    Specification Style Guide                    June 2020)'
+()'
+(4.1.1. Author/Editor)'
+()'
+(   The determination of who should be listed as an author or editor on a)'
+(   Specification Document is made by the stream.)'
+()'
+(   The author's name \(initial followed by family name\) appears on the first line)'
+(   of the heading.  Some variation, such as additional initials or)'
+(   capitalization of family name, is acceptable.  Once the author has selected)'
+(   how their name should appear, they should use that display consistently in)'
+(   all of their documents.)'
+()'
+(   The total number of authors or editors on the first page is generally limited)'
+(   to five individuals and their affiliations.  If there is a request for more)'
+(   than five authors, the stream-approving body needs to considor if one or two)'
+(   editors should have primary responsibility for this document, with the other)'
+(   individuals listed in the Contributors or Acknowledgements section.  There)'
+(   must be a direct correlation of authors and editors in the document header)'
+(   and the Authors' Information section.  These are the individuals that must)'
+(   sign off on the document and respond to inquiries.)'
+()'
+(4.1.2. Organization)'
+()'
+(   The author's organization is indicated on the line following the author's)'
+(   name.)'
+()'
+(   For multiple authors, each author name appears on its own line, followed by)'
+(   that author's organization.  When more than one author is affiliated with the)'
+(   same organization, the organization can be "factored out", appearing only)'
+(   once following the corresponding Author lines.  However, such factoring is)'
+(   inappropriate when it would force an unacceptable reordering of author names.)'
+()'
+(   If an author can not or will not provide an affiliation for any reason,)'
+(   "Independent", "Individual Contributor", "Retired", or some other term that)'
+(   appropriately describes the author's affiliation may be used. Alternatively,)'
+(   a blank line may be included in the document header where no affiliation is)'
+(   provided.)'
+()'
+(4.1.3. Updates and Obsoletes)'
+()'
+(   When a Specification Document obsoletes or updates a previously published)'
+(   Specification Document or Specification Documents, this information is)'
+(   included in the document header.  For example:)'
+()'
+(      "Updates: nnnn" or "Updates: nnnn, ..., nnnn")'
+()'
+(      "Obsoletes: nnnn" or "Obsoletes: nnnn, ..., nnnn")'
+()'
+(   If the document updates or obsoletes more than one document, numbers will be)'
+(   listed in ascending order.)'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+(Bron                                                                    [Page 8])'
+ET
+endstream
+endobj
+29 0 obj
+2764
+endobj
+30 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 31 0 R
+>>
+endobj
+31 0 obj
+<<
+/Length 32 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 802 Tm
+12 TL
+(SD0003                    Specification Style Guide                    June 2020)'
+()'
+(4.2. Full Title)'
+()'
+(   The title must be centered below the rest of the heading, preceded by two)'
+(   blank lines and followed by one blank line.)'
+()'
+(   Choosing a good title for a Specification Document can be a challenge. A good)'
+(   title should fairly represent the scope and purpose of the document without)'
+(   being either too general or too specific and lengthy.)'
+()'
+(   Abbreviations in a title must generally be expanded when first encountered)'
+(   \(See section 3.6 for additional guidance on abbreviations\).)'
+()'
+(   It is often helpful to follow the expansion with the parenthesized)'
+(   abbreviation, as in the following example:)'
+()'
+(                      Encoding Rules for the)'
+(      Common Routing Encapsulation Extension Protocol \(CREEP\))'
+()'
+(4.3. Abstract Section)'
+()'
+(   Every Specification Document must have an Abstract that provides a concise)'
+(   and comprehensive overview of the purpose and contents of the entire)'
+(   document, to give a technically knowledgeable reader a general overview of)'
+(   the function of the document.)'
+()'
+(   Composing a useful Abstract generally requires thought and care. Usually, an)'
+(   Abstract should begin with a phrase like "This memo ..." or "This document)'
+(   ...". A satisfactory Abstract can often be constructed in part from material)'
+(   within the Introduction section, but an effective Abstract may be shorter,)'
+(   less detailed, and perhaps broader in scope than the Introduction.  Simply)'
+(   copying and pasting the first few paragraphs of the Introduction is allowed,)'
+(   but it may result in an Abstract that is both incomplete and redundant.  Note)'
+(   also that an Abstract is not a subsitute for an Introduction; the)'
+(   Specification Document should be self-contained as if there were no Abstract.)'
+()'
+(   Similarly, the Abstract should be complete in itself.  It will appear is)'
+(   isolation in publication announcements.  Therefore, the Abstract must not)'
+(   contain citations.)'
+()'
+(4.4. Table of Contents Section)'
+()'
+(   A Table of Contents \(TOC\) is required in all Specification Documents. It must)'
+(   be positioned after the Copyright Notice and before the Introduction.)'
+()'
+(4.5. Body of the Document)'
+()'
+(   Following the TOC is the body of the document.)'
+()'
+(   Each Specification Document must include an Introduction section that \(among)'
+(   other things\) explains the motivation for the Specification and \(if)'
+(   appropriate\) describes the applicability of the document, e.g., whether it)'
+(   specifies a protocol, provides a discussion of some problem, is simply of)'
+(   interest to the Internet community, or provides a status report on some)'
+(   activity.  The body of the document and the Abstract must be self-contained)'
+(   and separable.  This may result in some duplication of text between the)'
+(   Abstract and the Introduction; this is acceptable.)'
+()'
+(Bron                                                                    [Page 9])'
+ET
+endstream
+endobj
+32 0 obj
+3142
+endobj
+33 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 34 0 R
+>>
+endobj
+34 0 obj
+<<
+/Length 35 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 802 Tm
+12 TL
+(SD0003                    Specification Style Guide                    June 2020)'
+()'
+(4.5.1. Introduction Section)'
+()'
+(   The Introduction section should always be the first section following the)'
+(   TOC.  While "Introduction" is recommended, authors may choose alternate)'
+(   titles such as "Overview" or "Background".  These alternates are acceptable.)'
+()'
+(4.5.2. Requirements Language Section)'
+()'
+(   Some document use certain capitalized words \("MUST", "SHOULD", etc.\) to)'
+(   specify precise requirement levels for technical features.  Section 2 of this)'
+(   document defines a default interpretation of these capitalized words in)'
+(   Specification Documents.  If this interpretation is used, this document must)'
+(   be citet and included as a normative reference.  Otherwise, the correct)'
+(   interpretation must be specified in the document.)'
+()'
+(   This section must appear as a part of the body of the memo \(as defined by)'
+(   this document\).  It must appear as part of, or subsequent to, the)'
+(   Introduction section.)'
+()'
+(   These words are considered part of the technical content of the document and)'
+(   are intended to provide guidance to implementers about specific technical)'
+(   features, generally governed by considerations of interopretability.)'
+()'
+(4.5.3. Internationalization Considerations Section)'
+()'
+(   All documents that deal with internationalization issues should have a)'
+(   section describing those issues.)'
+()'
+(4.5.4. Security Considerations Section)'
+()'
+(   All Specification Documents must contain a section that discusses the)'
+(   security considerations relevant to the specification.)'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+(Bron                                                                   [Page 10])'
+ET
+endstream
+endobj
+35 0 obj
+1888
+endobj
+36 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 37 0 R
+>>
+endobj
+37 0 obj
+<<
+/Length 38 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 802 Tm
+12 TL
+(SD0003                    Specification Style Guide                    June 2020)'
+()'
+(4.5.5. References Section)'
+()'
+(   The reference list is solely for recording reference entries. Introductory)'
+(   text is not allowed.)'
+()'
+(   The Specification Style allows the use of any of a variety of reference)'
+(   styles, as long as they are used consistently within a document.  However,)'
+(   where necessary, some reference styles have been described for use within the)'
+(   Series.  See the examples in this document.)'
+()'
+(   Reference lists must indicate whether each reference is normative or)'
+(   informative, where normative references are essential to implementing or)'
+(   understanding content of the Specification Document and informative)'
+(   references provide additional information.  When both normative and)'
+(   informative references exist, the references section should be split into two)'
+(   subsection:)'
+()'
+(      s. References)'
+()'
+(      s.1. Normative References)'
+()'
+(         xxx)'
+(         ...)'
+(         xxx)'
+()'
+(      s.2. Informative References)'
+()'
+(         xxx)'
+(         ...)'
+(         xxx)'
+()'
+(   References will generally appear in alphanumeric order by citation tag.)'
+(   Where there are only normative or informative references, no subsection is)'
+(   required; the top-level section should say "Normative References" or)'
+(   "Informative References".)'
+()'
+(4.5.5.1. URIs in Specification Documents)'
+()'
+(   The use of URIs in references is acceptable, as long as the URI is the most)'
+(   stable \(i.e., unlikely to change and expected to be continuously available\))'
+(   and direct reference possible. The URI will be verified as valid during the)'
+(   Specification Document editorial process.)'
+()'
+(   If a dates URI \(one that includes a timestamp for the page\) is available for)'
+(   a referenced web page, its use is required.)'
+()'
+(   Note that URIs may not be the sole information provided for a reference)'
+(   entry.)'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+(Bron                                                                   [Page 11])'
+ET
+endstream
+endobj
+38 0 obj
+2157
+endobj
+39 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 40 0 R
+>>
+endobj
+40 0 obj
+<<
+/Length 41 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 802 Tm
+12 TL
+(SD0003                    Specification Style Guide                    June 2020)'
+()'
+(4.5.5.2. Referencing Specification Documents)'
+()'
+(   The following format is required for referencing Specification Documents.)'
+(   Note the ordering for multiple authors: the format of the name of the last)'
+(   author listed is different than that of all previous authors in the list.)'
+()'
+(   For one author or editor:)'
+()'
+(      [SDXXXX] Last name, First initial., Ed. \(if applicable\),)'
+(               "Specification Title", Sub-series number \(if applicable\),)'
+(               Specification number, Date of publication,)'
+(               <https://finwo.github.io/specification/spec/#.pdf>)'
+()'
+(   Example:)'
+()'
+(      [SD0003] Bron, R.,)'
+(               "Specification Style Guide")'
+(               SD 0003, June 2020)'
+(               <https://finwo.github.io/specifications/spec/0003.pdf>)'
+()'
+(   For two authors or editors:)'
+()'
+(      [SDXXXX] Last name, First initial., Ed. \(if applicable\))'
+(               and First initial. Last name, Ed. \(if applicable\),)'
+(               "Specification Title", Sub-series number \(if applicable\))'
+(               Specification number, Date of publication)'
+(               <https://finwo.github.io/specification/spec/#.pdf>)'
+()'
+(   For three or more authors or editors:)'
+()'
+(      [SDXXXX] Last name, First initial., Ed. \(if applicable\),)'
+(               Last name, First initial., Ed. \(if applicable\),)'
+(               and First initial. Last name, Ed. \(if applicable\),)'
+(               "Specification Title", Sub-series number \(if applicable\))'
+(               Specification number, Date of publication)'
+(               <https://finwo.github.io/specification/spec/#.pdf>)'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+(Bron                                                                   [Page 12])'
+ET
+endstream
+endobj
+41 0 obj
+1963
+endobj
+42 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 43 0 R
+>>
+endobj
+43 0 obj
+<<
+/Length 44 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 802 Tm
+12 TL
+(SD0003                    Specification Style Guide                    June 2020)'
+()'
+(4.5.5.3. Referencing Other Standards Development Organizations \(SDOs\))'
+()'
+(   The following format is suggested when referencing a document or standard)'
+(   from another SDO in which authors are listed:)'
+()'
+(      [SYMBOLIC-TAG])'
+(         Last name, First initial. and First initial. Last name, "Document)'
+(         Title", Document reference number, Date of publication, <URI if)'
+(         available>.)'
+()'
+(      [W3C.REC-xml11])'
+(              Bray, T., Paoli, J., Sperberg-McQueen, C., Maler, E., Yergeau, F.,)'
+(              and J.  Cowan, "Extensible Markup Language \(XML\) 1.1 \(Second)'
+(              Edition\)", W3C Recommendation REC-xml11-20060816, August 2006,)'
+(              <http://www.w3.org/TR/2006/REC-xml11-20060816>.)'
+()'
+(   Note that the order of authors in the list is the same as order shown on the)'
+(   actual document and that the common, abbreviated form of SDO is used.)'
+()'
+(   Alternatively, when no list of authors is available, the following format is)'
+(   recommended:)'
+()'
+(      [SYMBOLIC-TAG]  Organization, "Document Title", Document reference number,)'
+(                      Date of publication, <URI if available>.)'
+()'
+(   Example:)'
+()'
+(      [IEEE802.1Q]  IEEE, "Local and Metropolitan Area Networks -- Media Access)'
+(                    Control \(MAC\) Bridges and Virtual Bridged Local Area)'
+(                    Networks", IEEE Std 802.1Q-2011, August 2011,)'
+(                    <http://standards.ieee.org/findstds/standard/)'
+(                    802.1Q-2011.html>.)'
+()'
+(4.6. Acknowledgements Section)'
+()'
+(   THis optional section may be used instead of, or in addition to, a)'
+(   Contributors section.  It is often used by authors to publicly thank those)'
+(   who have probided feedback regarding a document and to note any documents)'
+(   from which text was borrowed.)'
+()'
+(4.7. Contributors Section)'
+()'
+(   This optional section acknowledges those who have made significant)'
+(   contributions to the document.)'
+()'
+(   In a similar fashion to the Author Information section, the determination)'
+(   of who should be listed as a contributor is made by the stream.)'
+()'
+(   The Contributors section may include brief statements about the nature of)'
+(   particular contributions \("Sam contributed Section 3"\), and it may also)'
+(   include affiliations of listed contributors.  At the descretionnn of the)'
+(   author\(s\), contact addresses may also be included in the Contributors)'
+(   section, for those contributors whose knowledge makes them useful for future)'
+(   contacts for information about the Specification Document.  The format of any)'
+(   contact information should be similar to the format of information in the)'
+(   Author Information section.)'
+()'
+(Bron                                                                   [Page 13])'
+ET
+endstream
+endobj
+44 0 obj
+2974
+endobj
+45 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 46 0 R
+>>
+endobj
+46 0 obj
+<<
+/Length 47 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 802 Tm
+12 TL
+(SD0003                    Specification Style Guide                    June 2020)'
+()'
+(4.8. Author Information Section)'
+()'
+(   This required section gives contact information for the author\(s\) listed in)'
+(   the first-page header.)'
+()'
+(   Contact information must include a long-lived email address and optionally)'
+(   may include a postal address, telephone number, and/or Public PGP key.  If)'
+(   the postal address is included, it should include the country name, using the)'
+(   English short name listed by the ISO 3166 Maintenance Agency [ISO_OBP].  The)'
+(   purpose of this section is to \(1\) unambiguously define author identity \(e.g.,)'
+(   the John Smith who works for FooBar Systems\) and \(2\) provide contact)'
+(   information for future readers who have questions and comments.)'
+()'
+(   The practive of munged email addresses \(i.e., altering an email address to)'
+(   make it less readable to bots and web crawlers to avoid spam\) is not)'
+(   appropriate in an archival document series. Author contact information is)'
+(   provided so that the readers can easily contact the author with questions)'
+(   and/or comments. Address munging is not allowed in Specification Documents.)'
+()'
+(5. Security Considerations)'
+()'
+(   This document has no security considerations.)'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+(Bron                                                                   [Page 14])'
+ET
+endstream
+endobj
+47 0 obj
+1566
+endobj
+48 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 49 0 R
+>>
+endobj
+49 0 obj
+<<
+/Length 50 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 802 Tm
+12 TL
+(SD0003                    Specification Style Guide                    June 2020)'
+()'
+(6. Informative References)'
+()'
+(   [SD0000]   Bron, R., "Specification Format", SD 0000, August 2018)'
+(              <https://finwo.github.io/specification/spec/0000.pdf>)'
+()'
+(   [RFC5741]  Daigle, L., Ed., Kolkman, O., Ed., and IAB, "RFC Streams,)'
+(              Headers, and Boilerplates", RFC 5741, December 2009,)'
+(              <http://www.rfc-editor.org/info/rfc5741>.)'
+()'
+(   [ISO_OBP]  ISO, "Online Browsing Platform \(OBP\)",)'
+(              <https://www.iso.org/obp/ui/>.)'
+()'
+(Acknowledgements)'
+()'
+(   This document relies heavily on RFC 7322 [RFC7322]; as such, I am grateful to)'
+(   the authors of those documents for putting their time and effort into the RFC)'
+(   Series.)'
+()'
+(Author Information)'
+()'
+(   R. Bron)'
+(   EMail: robin@finwo.nl)'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+(Bron                                                                   [Page 15])'
+ET
+endstream
+endobj
+50 0 obj
+1128
+endobj
+3 0 obj
+<<
+/Type /Pages
+/Count 15
+/MediaBox [ 0 0 595 842 ]
+/Kids [ 6 0 R 9 0 R 12 0 R 15 0 R 18 0 R 21 0 R 24 0 R 27 0 R 30 0 R 33 0 R 36 0 R 39 0 R 42 0 R 45 0 R 48 0 R ]
+>>
+endobj
+xref
+0 51
+0000000000 65535 f 0000000009 00000 n 0000000133 00000 n 0000035821 00000 n 0000000182 00000 n 0000000260 00000 n 0000000331 00000 n 0000000411 00000 n 0000001518 00000 n 0000001538 00000 n 0000001619 00000 n 0000005330 00000 n 0000005351 00000 n 0000005433 00000 n 0000008218 00000 n 0000008239 00000 n 0000008321 00000 n 0000010533 00000 n 0000010554 00000 n 0000010636 00000 n 0000012977 00000 n 0000012998 00000 n 0000013080 00000 n 0000014740 00000 n 0000014761 00000 n 0000014843 00000 n 0000016962 00000 n 0000016983 00000 n 0000017065 00000 n 0000019883 00000 n 0000019904 00000 n 0000019986 00000 n 0000023182 00000 n 0000023203 00000 n 0000023285 00000 n 0000025227 00000 n 0000025248 00000 n 0000025330 00000 n 0000027541 00000 n 0000027562 00000 n 0000027644 00000 n 0000029661 00000 n 0000029682 00000 n 0000029764 00000 n 0000032792 00000 n 0000032813 00000 n 0000032895 00000 n 0000034515 00000 n 0000034536 00000 n 0000034618 00000 n 0000035800 00000 n trailer
+<<
+/Size 51
+/Root 2 0 R
+/Info 1 0 R
+>>
+startxref
+36004
+%%EOF
