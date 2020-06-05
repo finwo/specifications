@@ -1,0 +1,50 @@
+            </tbody>
+        </table>
+
+        <script>
+
+            // Query String handler
+            const qs = {
+                parse(str) {
+                    let output    = {};
+                    str.split('&').forEach(param => {
+                        let [key, value] = param.split('=');
+                        output[decodeURIComponent(key)] = decodeURIComponent(value);
+                    });
+                    return output;
+                },
+            };
+
+            // Make the table nice and searchable
+            const datatable = new simpleDatatables.DataTable('#specTable', {
+                searchable: true
+            });
+
+            // Make all elements act as anchors when [href] is present
+            Array.from(document.querySelectorAll('[href]')).forEach(node => {
+                node.style.cursor = 'pointer';
+                node.addEventListener('click', ev => {
+                    ev.preventDefault();
+                    let elem = ev.target;
+                    while(!elem.attributes.href)
+                        elem = elem.parentNode;
+                    document.location.href = elem.attributes.href.value;
+                });
+            });
+
+            // Hardwired data binding
+            function onHashChange() {
+                let q = qs.parse(document.location.hash.substr(1));
+                if (q.q == datatable.input.value) return;
+                datatable.input.value = q.q || '';
+                datatable.search(q.q || '');
+            };
+            window.addEventListener('hashchange', onHashChange, false);
+            datatable.on('datatable.search', query => {
+                document.location.hash = '#q=' + query;
+            });
+            onHashChange();
+
+        </script>
+    </body>
+</html>
