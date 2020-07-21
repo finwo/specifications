@@ -671,14 +671,14 @@ SD0003                    Specification Style Guide                    June 2020
       [SDXXXX] Last name, First initial., Ed. (if applicable),
                "Specification Title", Sub-series number (if applicable),
                Specification number, Date of publication,
-               <https://finwo.github.io/specification/spec/#.pdf>
+               <https://finwo.nl/specification/#.pdf>
 
    Example:
 
       [SD0003] Bron, R.,
                "Specification Style Guide"
                SD 0003, June 2020
-               <https://finwo.github.io/specifications/spec/0003.pdf>
+               <https://finwo.nl/specifications/0003.pdf>
 
    For two authors or editors:
 
@@ -686,7 +686,7 @@ SD0003                    Specification Style Guide                    June 2020
                and First initial. Last name, Ed. (if applicable),
                "Specification Title", Sub-series number (if applicable)
                Specification number, Date of publication
-               <https://finwo.github.io/specification/spec/#.pdf>
+               <https://finwo.nl/specification/#.pdf>
 
    For three or more authors or editors:
 
@@ -695,7 +695,7 @@ SD0003                    Specification Style Guide                    June 2020
                and First initial. Last name, Ed. (if applicable),
                "Specification Title", Sub-series number (if applicable)
                Specification number, Date of publication
-               <https://finwo.github.io/specification/spec/#.pdf>
+               <https://finwo.nl/specification/#.pdf>
 
 
 
@@ -843,7 +843,7 @@ SD0003                    Specification Style Guide                    June 2020
 6. Informative References
 
    [SD0000]   Bron, R., "Specification Format", SD 0000, August 2018
-              <https://finwo.github.io/specification/spec/0000.pdf>
+              <https://finwo.nl/specification/0000.pdf>
 
    [RFC5741]  Daigle, L., Ed., Kolkman, O., Ed., and IAB, "RFC Streams,
               Headers, and Boilerplates", RFC 5741, December 2009,

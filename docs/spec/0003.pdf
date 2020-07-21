@@ -1,9 +1,9 @@
 %PDF-1.1
 1 0 obj
 <<
-/CreationDate (D:20200605114817)
+/CreationDate (D:20200721125832)
 /Producer (text2pdf v1.1 (\251 Phil Smith, 1996))
-/Title (./0003.txt)
+/Title (/home/finwo/src/finwo/specifications/src/spec/0003/document.txt.rendered)
 >>
 endobj
 2 0 obj
@@ -969,14 +969,14 @@ BT
 (      [SDXXXX] Last name, First initial., Ed. \(if applicable\),)'
 (               "Specification Title", Sub-series number \(if applicable\),)'
 (               Specification number, Date of publication,)'
-(               <https://finwo.github.io/specification/spec/#.pdf>)'
+(               <https://finwo.nl/specification/#.pdf>)'
 ()'
 (   Example:)'
 ()'
 (      [SD0003] Bron, R.,)'
 (               "Specification Style Guide")'
 (               SD 0003, June 2020)'
-(               <https://finwo.github.io/specifications/spec/0003.pdf>)'
+(               <https://finwo.nl/specifications/0003.pdf>)'
 ()'
 (   For two authors or editors:)'
 ()'
@@ -984,7 +984,7 @@ BT
 (               and First initial. Last name, Ed. \(if applicable\),)'
 (               "Specification Title", Sub-series number \(if applicable\))'
 (               Specification number, Date of publication)'
-(               <https://finwo.github.io/specification/spec/#.pdf>)'
+(               <https://finwo.nl/specification/#.pdf>)'
 ()'
 (   For three or more authors or editors:)'
 ()'
@@ -993,7 +993,7 @@ BT
 (               and First initial. Last name, Ed. \(if applicable\),)'
 (               "Specification Title", Sub-series number \(if applicable\))'
 (               Specification number, Date of publication)'
-(               <https://finwo.github.io/specification/spec/#.pdf>)'
+(               <https://finwo.nl/specification/#.pdf>)'
 ()'
 ()'
 ()'
@@ -1020,7 +1020,7 @@ ET
 endstream
 endobj
 41 0 obj
-1963
+1915
 endobj
 42 0 obj
 <<
@@ -1210,7 +1210,7 @@ BT
 (6. Informative References)'
 ()'
 (   [SD0000]   Bron, R., "Specification Format", SD 0000, August 2018)'
-(              <https://finwo.github.io/specification/spec/0000.pdf>)'
+(              <https://finwo.nl/specification/0000.pdf>)'
 ()'
 (   [RFC5741]  Daigle, L., Ed., Kolkman, O., Ed., and IAB, "RFC Streams,)'
 (              Headers, and Boilerplates", RFC 5741, December 2009,)'
@@ -1269,7 +1269,7 @@ ET
 endstream
 endobj
 50 0 obj
-1128
+1116
 endobj
 3 0 obj
 <<
@@ -1281,12 +1281,12 @@ endobj
 endobj
 xref
 0 51
-0000000000 65535 f 0000000009 00000 n 0000000133 00000 n 0000035806 00000 n 0000000182 00000 n 0000000260 00000 n 0000000331 00000 n 0000000411 00000 n 0000001503 00000 n 0000001523 00000 n 0000001604 00000 n 0000005315 00000 n 0000005336 00000 n 0000005418 00000 n 0000008203 00000 n 0000008224 00000 n 0000008306 00000 n 0000010518 00000 n 0000010539 00000 n 0000010621 00000 n 0000012962 00000 n 0000012983 00000 n 0000013065 00000 n 0000014725 00000 n 0000014746 00000 n 0000014828 00000 n 0000016947 00000 n 0000016968 00000 n 0000017050 00000 n 0000019868 00000 n 0000019889 00000 n 0000019971 00000 n 0000023167 00000 n 0000023188 00000 n 0000023270 00000 n 0000025212 00000 n 0000025233 00000 n 0000025315 00000 n 0000027526 00000 n 0000027547 00000 n 0000027629 00000 n 0000029646 00000 n 0000029667 00000 n 0000029749 00000 n 0000032777 00000 n 0000032798 00000 n 0000032880 00000 n 0000034500 00000 n 0000034521 00000 n 0000034603 00000 n 0000035785 00000 n trailer
+0000000000 65535 f 0000000009 00000 n 0000000195 00000 n 0000035808 00000 n 0000000244 00000 n 0000000322 00000 n 0000000393 00000 n 0000000473 00000 n 0000001565 00000 n 0000001585 00000 n 0000001666 00000 n 0000005377 00000 n 0000005398 00000 n 0000005480 00000 n 0000008265 00000 n 0000008286 00000 n 0000008368 00000 n 0000010580 00000 n 0000010601 00000 n 0000010683 00000 n 0000013024 00000 n 0000013045 00000 n 0000013127 00000 n 0000014787 00000 n 0000014808 00000 n 0000014890 00000 n 0000017009 00000 n 0000017030 00000 n 0000017112 00000 n 0000019930 00000 n 0000019951 00000 n 0000020033 00000 n 0000023229 00000 n 0000023250 00000 n 0000023332 00000 n 0000025274 00000 n 0000025295 00000 n 0000025377 00000 n 0000027588 00000 n 0000027609 00000 n 0000027691 00000 n 0000029660 00000 n 0000029681 00000 n 0000029763 00000 n 0000032791 00000 n 0000032812 00000 n 0000032894 00000 n 0000034514 00000 n 0000034535 00000 n 0000034617 00000 n 0000035787 00000 n trailer
 <<
 /Size 51
 /Root 2 0 R
 /Info 1 0 R
 >>
 startxref
-35989
+35991
 %%EOF
