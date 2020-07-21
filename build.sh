@@ -23,6 +23,11 @@ find ${ORGDIR} -maxdepth 1 -type d -regextype posix-egrep -regex '.*[0-9]{4}' | 
   script/template.sh -c ${spec}/data.ini src/html/index.html.entry >> docs/index.html
   script/template.sh -c ${spec}/data.ini src/markdown/README.md.entry >> README.md
 
+  # Skip rendering already-existing files
+  if [ -f "${SPECDIR}/${DATA[identifier]}.pdf" ]; then
+    continue;
+  fi
+
   # Check how to render the document itself
   filename=$(echo ${spec}/document.*)
   case "${filename##*.}" in
