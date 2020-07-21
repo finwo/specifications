@@ -42,7 +42,7 @@ find ${ORGDIR} -maxdepth 1 -type d -regextype posix-egrep -regex '.*[0-9]{4}' | 
       ;;
     txt)
       # Include render data
-      script/template.sh -c ${spec}/data.ini ${filename} >> ${filename}.rendered
+      script/template.sh -c ${spec}/data.ini ${filename} > ${filename}.rendered
 
       # Font: Courier
       # 10pt font
@@ -52,8 +52,8 @@ find ${ORGDIR} -maxdepth 1 -type d -regextype posix-egrep -regex '.*[0-9]{4}' | 
       # 8 spaces per tab
       # Based on A4 paper
 
-      # -c81 because of a minor bug in text2pdf
-      text2pdf -fCourier -s10 -v12 -l60 -c81 -t8 -A4 ${filename}.rendered > ${SPECDIR}/${DATA[identifier]}.pdf
+      # -c 81 because of a minor bug in text2pdf
+      text2pdf -f Courier -s 10 -v 12 -l 60 -c 81 -t 8 -A 4 -T "${DATA[identifier]} - ${DATA[title]}" < ${filename}.rendered > ${SPECDIR}/${DATA[identifier]}.pdf
 
       # Remove rendered version
       rm ${filename}.rendered
