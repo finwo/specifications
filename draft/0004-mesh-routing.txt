@@ -1,0 +1,51 @@
+idea sources:
+  cjdns
+  mainline-dht
+
+aims to replace wide-area-networks
+
+each node has interface count
+node's address width = interface count + 1 fitting binary number
+node with 8 interfaces has an address width of 4 bits
+  0     = invalid
+  1     = self
+  2,..9 = interfaces
+
+
+routing label usage:
+  "interface to route to" is MSB (first bits on wire), to forward at "wirespeed"
+  when forwarding, the "hop" adds it's receiving port in reverse to the LSB while removing it's interface from the MSB
+  to respond, reverse the whole routing label to reverse the path
+
+  Assuming 32-bit routing labels, sending a message from Alice to Charlie via Bob, the label would look as follows entring alice's routing core
+    Entering Alice's routing core:
+      0110 110000 000001 0000000000000000
+      \--/                                   Alice(6) -> Bob(123)
+           \----/                            Bob(48) -> Charlie(33)
+                  \----/                     Charlie(1) "self"
+                         \--------------/    Empty space
+    Received by Bob on interface 123
+      110000 000001 0000000000000000 1000
+      \----/                                 Bob(48) -> Charlie(33)
+             \----/                          Charlie(1) "self"
+                                     \--/    Alice(1) reversed "self"
+    Received by Charlie on interface 33
+      000001 000000000000000 1000 1101111
+      \----/                                Charlie(1) "self"
+                              \--/          Alice(1) reversed "self"
+                                   \----/   Bob(123) reversed
+    Charlie's core registers this as (flipped) return path
+      000000000000000 1000 1101111 100001
+                      \--/                  Alice(1) reversed "self"
+                           \-----/          Bob(123) reversed
+                                   \----/   Charlie(33) reversed
+
+
+
+Hard problem to solve:
+  node identifiers (look at asymmetric-diffie-hellman?)
+  native encryption
+  shortest path to node with ID X
+  service discovery
+    simply searching network for service is slow AF
+  named alt-net gateways
