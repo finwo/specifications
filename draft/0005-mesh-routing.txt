@@ -41,6 +41,15 @@ routing label usage:
                                    \----/   Charlie(33) reversed
 
 
+Node identifiers: see SD0004 (draft)
+
+Path discovery:
+  Broadcast every N seconds presence on network (B.A.T.M.A.N. protocol)? -> too much data in large networks
+  Broadcast "who has node X"? -> might work, still a lot of meta in large networks, includes "fastest path" detection
+  Dijkstra's path finding, adding discovered neighbours to the "unvisited" list
+    Harder, will take longer, but removes overhead on further parts of the network
+    All nodes must track RTT and IDs for all their neighbours
+    Path sharing (Charlie alreay knows a path to Fred) might speed this up but will not be the ideal path
 
 Hard problem to solve:
   node identifiers (look at asymmetric-diffie-hellman?)

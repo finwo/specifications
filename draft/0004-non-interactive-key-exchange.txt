@@ -1,0 +1,4 @@
+signatures?     https://sphincs.cr.yp.to/sphincs-20150202.pdf
+Key exchange? https://github.com/finwo/asymmetric-diffie-hellman-js/
+
+
