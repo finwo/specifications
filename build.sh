@@ -44,6 +44,14 @@ find ${ORGDIR} -maxdepth 1 -type d -regextype posix-egrep -regex '.*[0-9]{4}' | 
       # Include render data
       script/template.sh -c ${spec}/data.ini ${filename} > ${filename}.rendered
 
+      # <0003 = 60 lines per page
+      # >=0003 = 63 lines per page
+      LPP=60
+      if [ "${DATA[identifier]}" -ge "3" ]; then
+        LPP=63
+      fi
+      echo "LPP: ${LPP}"
+
       # Font: Courier
       # 10pt font
       # 12pt line height
@@ -53,7 +61,7 @@ find ${ORGDIR} -maxdepth 1 -type d -regextype posix-egrep -regex '.*[0-9]{4}' | 
       # Based on A4 paper
 
       # -c 81 because of a minor bug in text2pdf
-      text2pdf -f Courier -s 10 -v 12 -l 60 -c 81 -t 8 -A 4 -T "${DATA[identifier]} - ${DATA[title]}" < ${filename}.rendered > ${SPECDIR}/${DATA[identifier]}.pdf
+      text2pdf -f Courier -s 10 -v 12 -l $LPP -c 81 -t 8 -A 4 -T "${DATA[identifier]} - ${DATA[title]}" < ${filename}.rendered > ${SPECDIR}/${DATA[identifier]}.pdf
 
       # Remove rendered version
       rm ${filename}.rendered
