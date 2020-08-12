@@ -711,7 +711,7 @@ SD0003                    Specification Style Guide                    June 2020
       [SD0003] Bron, R.,
                "Specification Style Guide"
                SD 0003, June 2020
-               <https://finwo.nl/specifications/0003.pdf>
+               <https://finwo.nl/specification/0003.pdf>
 
    For two authors or editors:
 

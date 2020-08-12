@@ -57,7 +57,6 @@ find ${ORGDIR} -maxdepth 1 -type d -regextype posix-egrep -regex '.*[0-9]{4}' | 
       if [ "${DATA[identifier]}" -ge "3" ]; then
         LPP=63
       fi
-      echo "LPP: ${LPP}"
 
       # -c 81 because of a minor bug in text2pdf
       text2pdf -f Courier -s 10 -v 12 -l $LPP -c 81 -t 8 -A 4 -T "${DATA[identifier]} - ${DATA[title]}" < ${filename}.rendered > ${SPECDIR}/${DATA[identifier]}.pdf
