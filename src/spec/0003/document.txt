@@ -832,7 +832,7 @@ SD0003                    Specification Style Guide                    June 2020
    the John Smith who works for FooBar Systems) and (2) provide contact
    information for future readers who have questions and comments.
 
-   The practive of munged email addresses (i.e., altering an email address to
+   The practice of munged email addresses (i.e., altering an email address to
    make it less readable to bots and web crawlers to avoid spam) is not
    appropriate in an archival document series. Author contact information is
    provided so that the readers can easily contact the author with questions
