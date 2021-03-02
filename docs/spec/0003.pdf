@@ -1,7 +1,7 @@
 %PDF-1.1
 1 0 obj
 <<
-/CreationDate (D:20200812165937)
+/CreationDate (D:20210302095919)
 /Producer (text2pdf v1.1 (\251 Phil Smith, 1996))
 /Title (0003 - Specification Style Guide)
 >>
@@ -1176,7 +1176,7 @@ BT
 (   the John Smith who works for FooBar Systems\) and \(2\) provide contact)'
 (   information for future readers who have questions and comments.)'
 ()'
-(   The practive of munged email addresses \(i.e., altering an email address to)'
+(   The practice of munged email addresses \(i.e., altering an email address to)'
 (   make it less readable to bots and web crawlers to avoid spam\) is not)'
 (   appropriate in an archival document series. Author contact information is)'
 (   provided so that the readers can easily contact the author with questions)'
