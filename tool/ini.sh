@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# c90839f9-835f-4f11-b6cd-86d17220195d
 shopt -s extglob
 
 readonly PROGNAME=$(basename $0)

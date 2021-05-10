@@ -14,14 +14,14 @@ find ${ORGDIR} -maxdepth 1 -type d -regextype posix-egrep -regex '.*[0-9]{4}' | 
   declare -A DATA
   while IFS='=' read key value; do
     DATA["$key"]="$value"
-  done <<< "$(script/ini.sh ${spec}/data.ini)"
+  done <<< "$(tool/ini.sh ${spec}/data.ini)"
 
   # Show we're actually working
   echo "  ${DATA[identifier]}: ${DATA[title]}"
 
   # Render readme & html entries
-  script/template.sh -c ${spec}/data.ini src/html/index.html.entry >> docs/index.html
-  script/template.sh -c ${spec}/data.ini src/markdown/README.md.entry >> README.md
+  tool/template.sh -c ${spec}/data.ini src/html/index.html.entry >> docs/index.html
+  tool/template.sh -c ${spec}/data.ini src/markdown/README.md.entry >> README.md
 
   # Skip rendering already-existing files
   if [ -f "${SPECDIR}/${DATA[identifier]}.pdf" ]; then
@@ -42,7 +42,7 @@ find ${ORGDIR} -maxdepth 1 -type d -regextype posix-egrep -regex '.*[0-9]{4}' | 
       ;;
     txt)
       # Include render data
-      script/template.sh -c ${spec}/data.ini ${filename} > ${filename}.rendered
+      tool/template.sh -c ${spec}/data.ini ${filename} > ${filename}.rendered
 
       # Font: Courier
       # 10pt font
