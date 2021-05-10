@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# e660cc6c-638a-4f9b-9527-ff96a19bbeed
 
 # Very simple templating system that replaces {{VAR}} by the value of $VAR.
 # Supports default values by writting {{VAR=value}} in the template.
@@ -12,10 +13,12 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 usage="
 Usage:
   ${PROGNAME} -h|--help
+  ${PROGNAME} --update
   ${PROGNAME} [-c|--config config_file] [-p|--partials partials_dir] template_file [...template_file]
 
 Options:
   -h --help             Show this help text
+     --update           Perform a self-update
   -c --config <path>    Specify config file
   -p --partials <path>  Specify partials directory
 "
@@ -34,11 +37,16 @@ while [ "$#" -gt 0 ]; do
       echo "$usage"
       exit 0
       ;;
+    --update)
+      curl -L -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/finwo/ini-tools/master/template.sh > "${DIR}/${PROGNAME}"
+      exit $?
+      ;;
     -c|--config)
       shift
       PARTIALARGS="${PARTIALARGS} -c ${1}"
       if [[ -f "${1}" ]]; then
         while IFS='=' read key value; do
+          if [ -z "$key" ]; then continue; fi
           TOKENS["$key"]="$value"
         done <<< "$(${DIR}/ini.sh ${1})"
       fi
