@@ -64,6 +64,9 @@ find ${ORGDIR} -maxdepth 1 -type d -regextype posix-egrep -regex '.*[0-9]{4}' | 
       # Remove rendered version
       rm ${filename}.rendered
       ;;
+    rendered)
+      # Skip
+      ;;
     *)
       echo "Unknown document type: ${filename##*.}" 1>&2
       exit 1
