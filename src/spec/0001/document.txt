@@ -851,7 +851,7 @@ SPEC 0001                     JavaScript Styling                     August 2018
          Brand new files MUST use Finwo style, regardless of style choices of
          other files in the same package. When adding new code to a file that is
          not in Finwo Style, reformatting the existing code first is
-         recommended, subject to the advice in section 8.3.1.
+         recommended, subject to the advice in section 6.3.1.
 
          If this reformatting is not done, the new code should be as consistent
          as possible with existing code in the same file, but MUST not break any
