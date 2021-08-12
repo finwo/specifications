@@ -45,7 +45,9 @@ while [ "$#" -gt 0 ]; do
       shift
       PARTIALARGS="${PARTIALARGS} -c ${1}"
       if [[ -f "${1}" ]]; then
-        while IFS='=' read key value; do
+        while IFS='\n' read line; do
+          key=${line%%=*}
+          value=${line#*=}
           if [ -z "$key" ]; then continue; fi
           TOKENS["$key"]="$value"
         done <<< "$(${DIR}/ini.sh ${1})"
@@ -95,7 +97,7 @@ for templatefile in "${TEMPLATES[@]}"; do
   done
 
   # Output the result
-  echo -e "$CONTENT"
+  echo -e "${CONTENT//"\\"/"\\\\"}"
 done
 
 
