@@ -791,9 +791,9 @@ SD0003                    Specification Style Guide                    June 2020
 
 4.6. Acknowledgements Section
 
-   THis optional section may be used instead of, or in addition to, a
+   This optional section may be used instead of, or in addition to, a
    Contributors section.  It is often used by authors to publicly thank those
-   who have probided feedback regarding a document and to note any documents
+   who have provided feedback regarding a document and to note any documents
    from which text was borrowed.
 
 4.7. Contributors Section
