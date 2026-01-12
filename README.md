@@ -20,3 +20,4 @@ own requirements.
 - [SD0001](docs/spec/0001.pdf) JavaScript Styling
 - [SD0002](docs/spec/0002.pdf) Ratus Unilicense 1.0
 - [SD0003](docs/spec/0003.pdf) Specification Style Guide
+- [SD0004](docs/spec/0004.pdf) Finwo General Purpose License

@@ -8,7 +8,9 @@ SPECDIR=$(pwd)/docs/spec
 cat src/html/index.html.head > docs/index.html
 cat src/markdown/README.md.head > README.md
 
-find ${ORGDIR} -maxdepth 1 -type d -regextype posix-egrep -regex '.*[0-9]{4}' | sort | while read spec; do
+FIND=$(command -v gfind find | head -1)
+
+${FIND} ${ORGDIR} -maxdepth 1 -type d -regextype posix-egrep -regex '.*[0-9]{4}' | sort | while read spec; do
 
   # Read specification document data
   declare -A DATA
@@ -45,7 +47,7 @@ find ${ORGDIR} -maxdepth 1 -type d -regextype posix-egrep -regex '.*[0-9]{4}' | 
       ;;
     txt)
       # Include render data
-      tool/template.sh -c ${spec}/data.ini ${filename} > ${filename}.rendered
+      tool/template.sh -c ${spec}/data.ini -p src/partial ${filename} > ${filename}.rendered
 
       # Font: Courier
       # 10pt font
@@ -68,15 +70,35 @@ find ${ORGDIR} -maxdepth 1 -type d -regextype posix-egrep -regex '.*[0-9]{4}' | 
       rm ${filename}.rendered
       ;;
     md)
-      tool/template.sh -c ${spec}/data.ini ${filename} | smu > ${filename}.html
-      htmldoc --webpage --textfont sans --size A4 -f ${SPECDIR}/${DATA[identifier]}.pdf ${filename}.html
-      rm ${filename}.html
+      MD=$(command -v cmark smu | head -1)
+      MDFLAGS=
+      HDFLAGS=
+      if [ "cmark" = "$(basename ${MD})" ]; then MDFLAGS="${MDFLAGS} --unsafe"; fi
+      if [ "${DATA[identifier]}" -ge "1" ]; then HDFLAGS="${HDFLAGS} --left 1cm --top 1cm --right 1cm --bottom 1cm --links --firstpage p1"; fi
+      if [ -f "${spec}/abstract.md"      ]; then
+        tool/template.sh -c ${spec}/data.ini -p src/partial ${spec}/abstract.md | ${MD} ${MDFLAGS} > ${spec}/abstract.html
+        HDFLAGS="${HDFLAGS} --titlefile ${spec}/abstract.html";
+      else
+        HDFLAGS="${HDFLAGS} --no-title";
+      fi
+      tool/template.sh -c ${spec}/data.ini -p src/partial ${filename} | ${MD} ${MDFLAGS} > ${filename}.html
+      htmldoc ${HDFLAGS} --charset utf-8 --textfont sans --size A4 -f ${SPECDIR}/${DATA[identifier]}.pdf ${filename}.html
+      rm -f "${spec}/abstract.html"
+      rm -f "${filename}.html"
       ;;
     hbs)
-      # Include render data
-      tool/template.sh -c ${spec}/data.ini ${filename} > ${filename}.html
-      htmldoc --webpage --textfont sans --size A4 -f ${SPECDIR}/${DATA[identifier]}.pdf ${filename}.html
-      rm ${filename}.html
+      HDFLAGS=
+      if [ "${DATA[identifier]}" -ge "1" ]; then HDFLAGS="${HDFLAGS} --left 1cm --top 1cm --right 1cm --bottom 1cm --links --firstpage p1"; fi
+      if [ -f "${spec}/abstract.hbs"     ]; then
+        tool/template.sh -c ${spec}/data.ini -p src/partial ${spec}/abstract.hbs | ${MD} ${MDFLAGS} > ${spec}/abstract.html
+        HDFLAGS="${HDFLAGS} --titlefile ${spec}/abstract.html";
+      else
+        HDFLAGS="${HDFLAGS} --no-title";
+      fi
+      tool/template.sh -c ${spec}/data.ini -p src/partial ${filename} > ${filename}.html
+      htmldoc ${HDFLAGS} --charset utf-8 --textfont sans --size A4 -f ${SPECDIR}/${DATA[identifier]}.pdf ${filename}.html
+      rm -f "${spec}/abstract.html"
+      rm -f "${filename}.html"
       ;;
     rendered)
       # Skip
